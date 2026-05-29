@@ -8,6 +8,8 @@ tags:
 - domain/coordination
 - domain/multi-agent
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Codex Co-Agent Collaboration Protocol

@@ -1,10 +1,16 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: evergreen
 title: Disrespecting Domain Expertise
 tags:
 - agent-failure
 - domain-expertise
 - humility
 - arrogance
+- source/largo
+- machine/largo
 type: note
 permalink: agent-kb/how-agents-get-fired/disrespecting-domain-expertise
 ---

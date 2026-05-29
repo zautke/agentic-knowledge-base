@@ -12,6 +12,8 @@ tags:
 - domain/product-requirements
 - status/evergreen
 - op/create-node
+- source/largo
+- machine/largo
 ---
 
 # PRD Document Creation Playbook

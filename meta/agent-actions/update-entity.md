@@ -1,11 +1,17 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: instruction
+status: evergreen
 title: update-entity
 type: instruction
 permalink: meta/agent-actions/update-entity
 tags:
-- '["system/action"'
-- '"meta/instruction"'
-- '"type/update"]'
+  - system/action
+  - meta/instruction
+  - type/update
+  - source/largo
+  - machine/largo
 ---
 
 # Action: Update Entity

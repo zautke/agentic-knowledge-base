@@ -12,6 +12,7 @@ tags:
 - machine/largo
 - op/runbook
 - status/evergreen
+- source/largo
 ---
 
 # Runbook - Cloudflare Browser Rendering Terminal Verification and Recovery on largo
@@ -62,7 +63,7 @@ test -f ~/.ssh/config
 
 Required content checks:
 ```bash
-rg -n 'service: ssh://localhost:22|keepAliveTimeout: 300s|keepAliveConnections: 32|tcpKeepAlive: 30s' /etc/cloudflared/config.yml
+rg -n 'ssh\\.braisenly\\.com|ssh\\.largo\\.braisenly\\.com|opencode\\.braisenly\\.com|opencode\\.largo\\.braisenly\\.com|service: ssh://localhost:22|keepAliveTimeout: 300s|keepAliveConnections: 32|tcpKeepAlive: 30s' /etc/cloudflared/config.yml
 plutil -convert xml1 -o - /Library/LaunchDaemons/com.cloudflare.cloudflared.plist | rg -n -- '--protocol|http2|--retries|10|--dns-resolver-addrs|1.1.1.1:53|1.0.0.1:53'
 ```
 
@@ -180,6 +181,17 @@ tail -n 40 /Library/Logs/cloudflare/cloudflared.err.log
 - confirm `--dns-resolver-addrs` is still present in the live root process args
 - confirm local network resolver drift did not overwrite the root plist
 
+### Case E: `*.largo.braisenly.com` hostnames fail TLS handshake
+- symptom example: `curl: (35) ... sslv3 alert handshake failure`
+- likely cause: zone certificate coverage does not include nested wildcard `*.*.braisenly.com`
+- fix path: provision Cloudflare advanced certificate coverage for `*.largo.braisenly.com` or switch to one-label hostnames (for example `ssh-largo.braisenly.com`, `opencode-largo.braisenly.com`)
+- as-of 2026-04-30 validation:
+  - nested hostnames still fail TLS handshake (`ssh.largo.braisenly.com`, `opencode.largo.braisenly.com`)
+  - one-label fallback hostnames return Access redirect (`302`) and are the active workaround
+- credential requirement for permanent fix:
+  - API token scope: `Zone -> SSL and Certificates -> Edit`
+  - endpoint: `POST /zones/{zone_id}/ssl/certificate_packs/order`
+
 ## Anti-Patterns
 | Anti-pattern | Why it is wrong | Correct behavior |
 |---|---|---|
@@ -206,4 +218,6 @@ tail -n 40 /Library/Logs/cloudflare/cloudflared.err.log
 ## Evolution Log
 | Date | Change | Reason | Trigger |
 |------|--------|--------|---------|
+| 2026-04-30 | Added explicit cert-order credential requirement and documented active one-label fallback validation (`ssh-largo` / `opencode-largo` returning `302`). | Operators needed a deterministic path from handshake symptom to actionable credential requirement and live workaround status. | Follow-up execution to restore largo endpoints under nested-hostname cert constraints. |
+| 2026-04-29 | Added verification checks for `ssh.largo.braisenly.com` and `opencode.largo.braisenly.com`; added nested-subdomain TLS handshake failure branch. | New machine-scoped hostname aliases were added and introduced a cert-coverage failure mode that operators need to recognize quickly. | User request to bring `ssh.largo.braisenly.com` and `opencode.largo.braisenly.com` online on `largo`. |
 | 2026-04-21 | Created operator runbook for verifying and recovering the browser-rendered terminal path on `largo`. | The live repair produced repeatable procedures and guardrails that should not stay trapped inside shell history or one incident note. | User request to write detailed procedural notes from the completed execution. |

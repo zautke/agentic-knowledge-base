@@ -8,6 +8,8 @@ status: evergreen
 tags:
 - meta/agent
 - project/agent-kb
+- source/largo
+- machine/largo
 permalink: agent-kb/meta/meta-build-taxonomy
 ---
 

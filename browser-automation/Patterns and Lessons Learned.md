@@ -2,6 +2,9 @@
 title: Patterns and Lessons Learned
 type: note
 permalink: browser-automation/patterns-and-lessons-learned
+tags:
+  - source/largo
+  - machine/largo
 ---
 
 # Browser Automation Patterns & Lessons Learned

@@ -11,6 +11,8 @@ tags:
 - domain/tooling
 - domain/agent-protocol
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Internal Tool Addition Protocol

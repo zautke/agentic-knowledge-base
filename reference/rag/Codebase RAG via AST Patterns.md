@@ -149,11 +149,12 @@ Vector weight 0.35-0.65, graph weight 0.35-0.65, depth 2-3. Use `graphrag_local`
 
 - part_of [[Hybrid RAG Architecture – SOTA 2025-2026]]
 - related_to [[Multimodal RAG Ingestion Patterns]]
-- related_to [[projects/indexer: System Architecture Overview]]
-- implemented_by [[graphrag: Codebase Ingestion and AST Research]]
+- related_to [[System Architecture – assist-indexer]]
+- implemented_by [[graphrag Codebase Ingestion via AST]]
 
 ## Evolution Log
 
 | Date | Change | Reason | Trigger |
 |------|--------|--------|---------|
 | 2026-03-29 | Initial creation | Layer 2-A+B research: code-graph-rag, tree-sitter, AST patterns | graphrag plugin implementation sprint |
+| 2026-05-28 | Repaired two broken relation links: `[[projects/indexer: System Architecture Overview]]` → `[[System Architecture – assist-indexer]]` and `[[graphrag: Codebase Ingestion and AST Research]]` → `[[graphrag Codebase Ingestion via AST]]` (matched to real note titles) | Links used placeholder/colon naming that never resolved | KB curation hygiene sweep (operations/reference partition) |

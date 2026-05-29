@@ -1,7 +1,11 @@
 ---
 title: Multi-Agent Shared State and Blackboard Prior Art
 type: reference
+entity_type: reference
 permalink: agent-kb/reference/coordination/multi-agent-shared-state-and-blackboard-prior-art
+created: 2026-04-21
+modified: 2026-05-28
+status: evergreen
 tags:
 - project/agent-kb
 - domain/codex

@@ -21,8 +21,8 @@ Navigation hub for operational knowledge about local Ollama service management v
 
 ## Canonical Notes
 - [[Ollama Local Service (olsvc.sh) - Operational Session 2026-02-18]] - Session-grounded operational record for script enhancements, audit findings, and validation evidence.
-- [[Ollama Local Service (olsvc.sh) - Operational Session 2026-02-19]] - Follow-on session record for field-test artifact ingestion, multi-agent planning capture, and operational-plane enhancements.
-- [[Ollama Local Service (olsvc.sh) - Multi-Agent Field Test Plan]] - Canonical multi-agent test-plan node with command inventory, coverage matrix summary, and enhancement backlog.
+- `[[Ollama Local Service (olsvc.sh) - Operational Session 2026-02-19]]` - UNRESOLVED (2026-05-28 curation check): no note with this title exists under `operations/ollama`. The 2026-02-19 Evolution Log entries below describe a planned follow-on session record that was never created. Left as a tracked gap rather than fabricated.
+- `[[Ollama Local Service (olsvc.sh) - Multi-Agent Field Test Plan]]` - UNRESOLVED (2026-05-28 curation check): no note with this title exists. Planned multi-agent test-plan node was never created. Tracked gap.
 
 ## Related Infrastructure Context
 - [[Machine Profile - largo]] - Host baseline where this session's operational checks were executed.
@@ -66,10 +66,13 @@ Navigation hub for operational knowledge about local Ollama service management v
 | 2026-02-18 | Created Ollama operations hub and linked canonical session note | Provide durable discoverability and non-duplicative index entry for new operational domain | Session curation for `olsvc.sh` enhancements and `.ollama` audit |
 | 2026-02-19 | Added 2026-02-19 session note and dedicated multi-agent field-test plan node to canonical set | Expand operational continuity and preserve test-plan SSOT as separate reusable node | Field-test artifact ingestion and curator indexing update |
 | 2026-02-19 | Expanded curation-primitive compilation and added index-level trigger conditions | Align hub note with strict curation protocol and explicit update triggers | Compliance pass for document-curation rules during same session |
+| 2026-05-28 | Annotated two unresolved canonical-note links (2026-02-19 session, Multi-Agent Field Test Plan) as tracked gaps; the referenced notes were never created. Demoted matching `related_to` lines to a documented unresolved block. | Index claimed notes that do not exist on disk, producing two dangling links | KB curation hygiene sweep (operations/reference partition) |
 
 ## Relations
 - related_to [[Ollama Local Service (olsvc.sh) - Operational Session 2026-02-18]]
-- related_to [[Ollama Local Service (olsvc.sh) - Operational Session 2026-02-19]]
-- related_to [[Ollama Local Service (olsvc.sh) - Multi-Agent Field Test Plan]]
 - related_to [[Machine Profile - largo]]
 - related_to [[Index – Agent KB]]
+
+## Unresolved Relations (tracked gaps, 2026-05-28)
+- related_to `[[Ollama Local Service (olsvc.sh) - Operational Session 2026-02-19]]` — note never created
+- related_to `[[Ollama Local Service (olsvc.sh) - Multi-Agent Field Test Plan]]` — note never created

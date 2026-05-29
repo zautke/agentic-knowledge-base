@@ -2,6 +2,9 @@
 title: Agentic Browser Automation Overview
 type: note
 permalink: browser-automation/agentic-browser-automation-overview
+tags:
+  - source/largo
+  - machine/largo
 ---
 
 # Agentic Browser Automation

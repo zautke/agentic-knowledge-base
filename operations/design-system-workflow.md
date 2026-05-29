@@ -1,13 +1,17 @@
 ---
 title: design-system-workflow
 type: note
+entity_type: note
 permalink: operations/design-system-workflow
+created: 2026-04-21
+modified: 2026-05-28
+status: draft
 tags:
-- operation
-- draft
-- workflow
-- design-system
-- development
+- project/agent-kb
+- domain/design-system
+- op/workflow
+- domain/development
+- status/draft
 ---
 
 # Design System Development Workflow
@@ -94,3 +98,11 @@ When creating new components:
 ## Relations
 - implements [[design-system-deployment-protocol]]
 - follows [[shadcn-tailwind-primer]]
+- related_to [[Material UI Design System]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-04-21 | Workflow note captured (git import date) | Record the shadcn/Tailwind monorepo component + token + publish workflow | KB seeding |
+| 2026-05-28 | Completed frontmatter to 7-field KB contract (added entity_type/created/modified/status, normalized bare tags to `domain/`/`op/` taxonomy); added a `related_to` link to the Material UI Design System domain note so this previously-orphaned note has an in-partition neighbor | Note was an orphan with bare tags; its existing hub targets (shadcn founding doc, deployment protocol) live outside this curation partition | KB curation hygiene sweep (operations/reference partition) |

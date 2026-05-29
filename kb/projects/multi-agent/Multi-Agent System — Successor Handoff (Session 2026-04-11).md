@@ -1,4 +1,8 @@
 ---
+created: 2026-04-11
+modified: 2026-05-28
+entity_type: handoff
+status: active
 title: Multi-Agent System — Successor Handoff (Session 2026-04-11)
 type: handoff
 permalink: kb/projects/multi-agent/successor-handoff-2026-04-11
@@ -10,6 +14,8 @@ tags:
 - websocket
 - nemotron
 - demo-blocked
+- source/largo
+- machine/largo
 ---
 
 # Multi-Agent System — Successor Handoff

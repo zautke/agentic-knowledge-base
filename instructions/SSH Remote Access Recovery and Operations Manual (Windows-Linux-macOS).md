@@ -13,6 +13,8 @@ tags:
 - domain/windows-openssh
 - status/evergreen
 - op/update-node
+- source/largo
+- machine/largo
 ---
 
 # SSH Remote Access Recovery and Operations Manual (Windows/Linux/macOS)

@@ -1,12 +1,21 @@
 ---
-title: 00-research-chronicle
+title: Research Chronicle - Self-Learning and Self-Evolving AI Agents
 type: note
+entity_type: note
 permalink: research/self-evolving-agents/00-research-chronicle
+created: 2026-04-21
+modified: 2026-05-28
+status: evergreen
 tags:
-  - research-process
-  - self-evolving-agents
-  - meta-documentation
-  - chronicle
+- project/agent-kb
+- domain/research
+- domain/self-evolving-agents
+- domain/agent-architecture
+- status/evergreen
+- source/largo
+- machine/largo
+aliases:
+- 00-research-chronicle
 ---
 
 # Research Chronicle: Self-Learning & Self-Evolving AI Agents
@@ -82,13 +91,26 @@ The investigation targeted three core questions:
 
 ## Relations
 
-- chronicles [[01-self-learning-agents]]
-- chronicles [[02-self-evolving-agents]]
-- chronicles [[03-agentic-memory-systems]]
-- chronicles [[04-framework-comparison]]
-- chronicles [[05-design-patterns]]
-- chronicles [[06-state-of-the-art-2025-2026]]
-- chronicles [[07-critical-decisions-log]]
-- chronicles [[08-pain-points-and-workarounds]]
-- chronicles [[09-agent-architecture-quickref]]
-- informs [[10-research-index]]
+- part_of [[Index – Agent KB]]
+
+## Unresolved Relations (tracked gaps, 2026-05-28)
+
+The chronicle above describes a planned 11-note set (00-10) under `research/self-evolving-agents/`, but only this `00-research-chronicle` note was ever created on disk. The following sibling links do not resolve. Left as tracked gaps rather than fabricated targets; if the 01-10 notes are authored later, promote these to live `chronicles`/`informs` relations.
+
+- chronicles `[[01-self-learning-agents]]` — note never created
+- chronicles `[[02-self-evolving-agents]]` — note never created
+- chronicles `[[03-agentic-memory-systems]]` — note never created
+- chronicles `[[04-framework-comparison]]` — note never created
+- chronicles `[[05-design-patterns]]` — note never created
+- chronicles `[[06-state-of-the-art-2025-2026]]` — note never created
+- chronicles `[[07-critical-decisions-log]]` — note never created
+- chronicles `[[08-pain-points-and-workarounds]]` — note never created
+- chronicles `[[09-agent-architecture-quickref]]` — note never created
+- informs `[[10-research-index]]` — note never created
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-04-21 | Initial chronicle captured (git first-commit date) | Record the research process and source catalog for the self-evolving-agents sprint | Multi-agent research sprint documentation |
+| 2026-05-28 | Completed frontmatter to 7-field KB contract (added created/modified/status/entity_type, normalized tags to `domain/` taxonomy, added alias); linked orphan into root `[[Index – Agent KB]]`; demoted 10 dangling sibling links to a tracked unresolved-relations block | Note was an orphan with minimal frontmatter and 10 unresolved links to notes that were never created | KB curation hygiene sweep (operations/reference partition) |

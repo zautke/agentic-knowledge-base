@@ -1,11 +1,17 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: index
+status: evergreen
 title: index
 type: index
 permalink: meta/prompts/index
 tags:
-- '["system/core"'
-- '"meta/prompts"'
-- '"type/index"]'
+  - system/core
+  - meta/prompts
+  - type/index
+  - source/largo
+  - machine/largo
 ---
 
 # Meta-Prompts Index

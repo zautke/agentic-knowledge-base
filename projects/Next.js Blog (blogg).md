@@ -4,6 +4,8 @@ type: reference
 permalink: projects/blogg
 entity_type: reference
 status: evergreen
+created: 2026-04-21
+modified: 2026-05-28
 tags:
 - project/blogg
 - domain/web-application
@@ -93,12 +95,19 @@ All curated docs live in `docs/`:
 
 ## Relations
 
+- indexed_by [[Index – blogg Project]]
 - uses [[Material UI Design System]]
-- uses [[Next.js]]
-- uses [[Tailwind CSS]]
-- uses [[Contentlayer]]
-- uses [[Docker]]
-- uses [[Playwright]]
-- uses [[Storybook]]
+- uses [[Next.js]] <!-- unresolved: no global Next.js reference note exists in KB yet -->
+- uses [[Tailwind CSS]] <!-- unresolved: no global Tailwind CSS reference note exists in KB yet -->
+- uses [[Contentlayer]] <!-- unresolved: no global Contentlayer reference note exists in KB yet -->
+- uses [[Docker]] <!-- unresolved: no global Docker reference note exists in KB yet -->
+- uses [[Playwright]] <!-- unresolved: no global Playwright reference note exists in KB yet -->
+- uses [[Storybook]] <!-- unresolved: no global Storybook reference note exists in KB yet -->
 - implements [[design-system-deployment-protocol]]
 - child_of [[Fundamental – Agent KB]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Added missing `created`/`modified` frontmatter; added inbound `indexed_by` link to the [[Index – blogg Project]] hub; annotated 6 unresolved global stack-reference relation targets (Next.js, Tailwind CSS, Contentlayer, Docker, Playwright, Storybook) with reasons. Verified [[Material UI Design System]] and [[design-system-deployment-protocol]] resolve to existing global notes. | Root note missing date fields and a back-link to its own hub; unresolved stack relations were not annotated. | KB curation sweep — projects/ partition. |

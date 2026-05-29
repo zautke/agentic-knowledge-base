@@ -97,8 +97,9 @@ result = await search_and_answer(api_key=..., query=..., model_config=config)
 | Date | Change | Reason | Trigger |
 |---|---|---|---|
 | 2026-04-18 | Initial pattern documented | Extracted from `ModelConfig`/`ModelObject` during agent-toolkit KB seeding | Global truth promotion — Bridge Protocol |
+| 2026-05-28 | Repaired broken relation link `[[agent-toolkit — README]]` → `[[agent-toolkit — Architecture Index]]` (no note titled "agent-toolkit — README" exists; the Architecture Index is the resolvable project hub) | Dangling derivation link | KB curation hygiene sweep (operations/reference partition) |
 
 ## Relations
-- derived_from [[agent-toolkit — README]]
+- derived_from [[agent-toolkit — Architecture Index]]
 - related_to [[LLM Fallback Cascade Pattern]]
 - used_by [[Hybrid Intelligence Pattern]]

@@ -1,11 +1,16 @@
 ---
 title: Browser Extension CDP Testing Patterns
 type: reference
+entity_type: reference
 permalink: reference/browser-automation/browser-extension-cdp-testing-patterns
+created: 2026-03-08
+modified: 2026-05-28
+status: evergreen
 tags:
+- project/agent-kb
 - domain/browser-automation
 - domain/cdp
-- project/agent-kb
+- status/evergreen
 ---
 
 # Browser Extension CDP Testing Patterns
@@ -129,3 +134,9 @@ Playwright's `launchPersistentContext` with `--load-extension` and `--disable-ex
 | Date | Change | Reason | Trigger |
 |------|--------|--------|---------|
 | 2026-03-08 | Initial Creation | Documented critical traps encountered when testing WXT extensions via Playwright/CDP, specifically the UI-lockout trap and the Target domain restriction. | Failed test run due to offline Docker container hiding valid background logic. |
+| 2026-05-28 | Corrected `created` to 2026-03-08 (note's own initial-creation date, not the 2026-04-21 git bulk-import date); added Relations section linking the Browser Automation domain hub | Frontmatter date was inaccurate and the note had no relation block | KB curation hygiene sweep (operations/reference partition) |
+
+## Relations
+
+- part_of [[Browser Automation]]
+- related_to [[Agentic Browser Automation Overview]]

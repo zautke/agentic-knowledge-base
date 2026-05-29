@@ -96,8 +96,9 @@ Returns `LLMResponse(result=..., usage=LLMUsage(...))` when `return_usage=True`.
 | Date | Change | Reason | Trigger |
 |---|---|---|---|
 | 2026-04-18 | Initial pattern documented | Extracted from `ainvoke_with_fallback` during agent-toolkit KB seeding | Global truth promotion — Bridge Protocol |
+| 2026-05-28 | Repaired broken relation link `[[agent-toolkit — README]]` → `[[agent-toolkit — Architecture Index]]` (no note titled "agent-toolkit — README" exists; the Architecture Index is the resolvable project hub and is already the back-link target from the Reference Patterns index) | Dangling derivation link | KB curation hygiene sweep (operations/reference partition) |
 
 ## Relations
-- derived_from [[agent-toolkit — README]]
+- derived_from [[agent-toolkit — Architecture Index]]
 - related_to [[LLM Provider Abstraction Pattern]]
 - implements [[Curator Handover Knowledge]]

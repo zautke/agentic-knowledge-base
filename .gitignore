@@ -1,0 +1,3 @@
+
+# machine config dumps with embedded secrets — keep local only
+operations/machines/ssh-recovery-snapshots/

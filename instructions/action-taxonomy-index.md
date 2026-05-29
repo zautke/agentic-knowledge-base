@@ -10,6 +10,8 @@ tags:
 - domain/memory-system
 - index/action-taxonomy
 - status/evergreen
+- source/largo
+- machine/largo
 permalink: agent-kb/instructions/action-taxonomy-index
 ---
 

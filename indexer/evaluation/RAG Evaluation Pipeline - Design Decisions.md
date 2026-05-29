@@ -7,6 +7,8 @@ tags:
 - design
 - indexer
 - decisions
+- source/largo
+- machine/largo
 created: 2026-01-21
 module: src/evaluation
 team: DOC-002

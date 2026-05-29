@@ -1,7 +1,11 @@
 ---
 title: Codex Lease Expiry Recovery Task
 type: note
+entity_type: note
 permalink: agent-kb/operations/coordination/tasks/codex-lease-expiry-recovery-task
+created: 2026-04-21
+modified: 2026-05-28
+status: active
 tags:
 - project/agent-kb
 - domain/codex

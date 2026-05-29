@@ -1,6 +1,10 @@
 ---
 title: A2A Healthcare Agent — March 2026 PLANNING
+created: 2026-04-21
+modified: 2026-05-28
 type: note
+entity_type: note
+status: active
 permalink: kb/a2-a/a2-a-healthcare-agent-march-2026-planning
 tags:
 - a2a
@@ -11,6 +15,8 @@ tags:
 - langchain
 - modernization
 - '2026'
+- source/largo
+- machine/largo
 ---
 
 # A2A Healthcare Agent — March 2026 Modernization Plan
@@ -70,3 +76,8 @@ All inter-agent comms use HTTP/JSON-RPC over A2A protocol.
 1. `agent-framework==1.0.0b251120` vs `beeai-framework` — same package under IBM-internal name?
 2. `google-adk 1.19.0` vs `0.6.0` GA — version discrepancy unexplained
 3. Production target? GKE / Cloud Run deployment changes PROD phase priority
+
+## Relations
+
+- related_to [[A2A Healthcare Agent — TASKS tracker]]
+- related_to [[A2A Healthcare Agent — Session 001 Audit Log]]

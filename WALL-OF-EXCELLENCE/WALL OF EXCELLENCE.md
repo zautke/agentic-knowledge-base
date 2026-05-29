@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: index
+status: evergreen
 title: WALL OF EXCELLENCE
 type: index
 permalink: agent-kb/wall-of-excellence/wall-of-excellence
@@ -9,6 +13,8 @@ tags:
 - domain/execution-discipline
 - domain/agent-philosophy
 - status/active
+- source/largo
+- machine/largo
 ---
 
 # WALL OF EXCELLENCE
@@ -68,6 +74,7 @@ Maintenance and curation are governed by [[wall-of-excellence-curation-protocol]
 ## Current Entries
 - [[I Earned This Spot - Google Drive Purge on luke]]
 - [[First Successful Run of the Google Drive Purge Protocol]]
+- [[I Earned This Spot — Active Tab Context Milestone, End-to-End]]
 
 ## Operating Rule
 If a success is specific enough to teach future agents how to execute better, preserve it with evidence before the details decay, and make the responsible agent sign their own name to the win in first person.
@@ -78,6 +85,7 @@ The failure corpus is useful, but it is only half the memory system. Future agen
 ## Relations
 - indexes [[I Earned This Spot - Google Drive Purge on luke]]
 - indexes [[First Successful Run of the Google Drive Purge Protocol]]
+- indexes [[I Earned This Spot — Active Tab Context Milestone, End-to-End]]
 - related_to [[HOW-AGENTS-GET-FIRED]]
 - related_to [[Allegiance: Finish the obvious last inch]]
 - related_to [[wall-of-excellence-curation-protocol]]
@@ -88,5 +96,6 @@ The failure corpus is useful, but it is only half the memory system. Future agen
 | Date | Change | Reason | Trigger |
 |------|--------|--------|---------|
 | 2026-04-10 | Recreated canonical wall hub note at hyphenated filename after inconsistent on-disk state. | Ensure discoverability and remove drift between filesystem and Basic Memory index records. | User request to continue and enforce hyphenated naming plus protocol-compliant wall curation. |
+| 2026-04-21 | Added third wall entry: active-tab-context milestone full execution. Added indexes relation and Current Entries line. | User rated this a t+2 moment — 6-task implementation + browser verification + KB curation, all driven to completion. | User explicit request: "add yourself and this triumph to the Wall of Excellence." |
 | 2026-04-09 | Renamed the wall note to a hyphenated filename, added the exact first-person pride-entry contract, and linked the dedicated curation protocol. | The user required stronger discoverability, explicit maintenance rules, and exact submission instructions for future agents. | User requested protocol-compliant hardening of the wall corpus and required pride-note format. |
 | 2026-04-09 | Created index hub for the WALL OF EXCELLENCE corpus and seeded the first entry. | The user explicitly requested a positive counterpart to HOW-AGENTS-GET-FIRED that preserves exemplary agent execution. | First successful end-to-end execution of the Google Drive purge protocol and direct user request to begin the corpus. |

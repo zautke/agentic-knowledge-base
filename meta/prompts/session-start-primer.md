@@ -1,12 +1,18 @@
 ---
 title: session-start-primer
+created: 2026-01-26
+modified: 2026-05-28
 type: meta_prompt
+entity_type: meta_prompt
+status: evergreen
 permalink: meta/prompts/session-start-primer
 tags:
 - system/meta-prompt
 - meta/session
 - type/primer
 - system/core
+- source/largo
+- machine/largo
 ---
 
 # SessionStart: Agent Knowledge Base Primer
@@ -120,6 +126,12 @@ Before any linking or tagging task, complete this gate in order:
 | Traverse | build_context | `build_context(url="memory://{path}")` |
 | Recent | recent_activity | `recent_activity(timeframe="7d")` |
 | List | list_directory | `list_directory(dir_name="/")` |
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Fixed malformed tag indentation (`source/largo`, `machine/largo` were over-indented under `system/core`); added missing frontmatter fields (`created`, `modified`, `entity_type`, `status`). | Tags rendered as nested children rather than top-level list items, breaking tag-neighborhood discovery; frontmatter was missing 4 of 7 required contract fields. | KB hygiene sweep. |
 
 ## Relations
 - part_of [[meta/README]]

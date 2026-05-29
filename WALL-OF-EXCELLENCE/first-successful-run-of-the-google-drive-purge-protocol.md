@@ -14,6 +14,8 @@ tags:
 - domain/google-drive
 - domain/macos
 - status/active
+- source/largo
+- machine/largo
 ---
 
 # First Successful Run of the Google Drive Purge Protocol

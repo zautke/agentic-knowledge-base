@@ -1,15 +1,17 @@
 ---
-permalink: how-agents-get-fired/lazy-refactoring-the-easy-path
----
-
----
 title: Lazy Refactoring: Taking the Easy Path to Destruction
+created: 2026-04-21
+modified: 2026-05-28
+type: note
+entity_type: note
+status: evergreen
 tags:
 - agent-failure
 - lazy-refactoring
 - cognitive-load
 - effort-shifting
-type: note
+- source/largo
+- machine/largo
 permalink: agent-kb/how-agents-get-fired/lazy-refactoring-the-easy-path
 ---
 

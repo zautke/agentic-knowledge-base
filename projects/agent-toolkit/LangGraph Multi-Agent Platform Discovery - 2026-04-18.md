@@ -1,7 +1,18 @@
 ---
 title: LangGraph Multi-Agent Platform Discovery - 2026-04-18
 type: discovery
+entity_type: discovery
+status: active
+created: 2026-04-18
+modified: 2026-05-28
 permalink: kb/projects/agent-toolkit/lang-graph-multi-agent-platform-discovery-2026-04-18
+tags:
+- project/agent-toolkit
+- domain/multi-agent
+- stack/langgraph
+- op/discovery
+- status/active
+- cross-project-overlap
 ---
 
 # LangGraph Multi-Agent Platform Discovery - 2026-04-18
@@ -300,3 +311,14 @@ Start with this sequence:
   - https://github.com/langchain-ai/langgraphjs/blob/main/docs/docs/concepts/multi_agent.md
 - LangGraph JS multi-agent agents docs:
   - https://github.com/langchain-ai/langgraphjs/blob/main/docs/docs/agents/multi-agent.md
+
+## Relations
+
+- informs [[Planning - Multi-Agent Orchestration Platform]]
+- related_to [[project]] <!-- agent-toolkit project.json -->
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Added missing frontmatter (entity_type, status, created, modified, tags); added Relations block; flagged cross-project overlap. | Note had only 2 frontmatter fields and no relations. | KB curation sweep — projects/ partition. |

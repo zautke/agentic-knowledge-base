@@ -8,6 +8,8 @@ tags:
 - domain/coordination
 - domain/multi-agent
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Codex Coordination Task Note Template

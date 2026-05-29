@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: instruction
+status: evergreen
 title: link-entities
 type: instruction
 permalink: meta/agent-actions/link-entities
@@ -6,6 +10,8 @@ tags:
 - system/action
 - meta/instruction
 - type/link
+- source/largo
+- machine/largo
 ---
 
 # Action: Link Entities

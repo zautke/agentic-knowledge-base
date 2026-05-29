@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: active
 title: A2A Healthcare Agent — TASKS tracker
 type: note
 permalink: kb/a2-a/a2-a-healthcare-agent-tasks-tracker
@@ -7,6 +11,8 @@ tags:
 - tasks
 - todo
 - modernization
+- source/largo
+- machine/largo
 ---
 
 # A2A Healthcare Agent — Modernization Tasks
@@ -52,3 +58,8 @@ tags:
 - [ ] Evaluate gRPC transport for intra-cluster calls
 - [ ] Evaluate gemini-2.5-flash-lite for research agent cost reduction
 - [ ] Clarify agent-framework vs beeai-framework relationship
+
+## Relations
+
+- related_to [[A2A Healthcare Agent — March 2026 PLANNING]]
+- related_to [[A2A Healthcare Agent — Session 001 Audit Log]]

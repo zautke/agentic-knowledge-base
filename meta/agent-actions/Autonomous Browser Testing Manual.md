@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: evergreen
 title: Autonomous Browser Testing Manual
 type: note
 permalink: meta/agent-actions/autonomous-browser-testing-manual
@@ -8,6 +12,8 @@ tags:
 - agent-protocol
 - globally-applicable
 - methodology
+- source/largo
+- machine/largo
 ---
 
 # Autonomous Browser Testing Manual

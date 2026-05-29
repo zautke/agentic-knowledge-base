@@ -9,6 +9,8 @@ status: draft
 tags:
 - project/indexer
 - op/session-log
+- source/largo
+- machine/largo
 ---
 
 # 2026-03-17 Init Session — assist-indexer

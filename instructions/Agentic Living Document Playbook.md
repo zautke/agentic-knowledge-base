@@ -12,6 +12,8 @@ tags:
 - domain/methodology
 - status/evergreen
 - op/create-node
+- source/largo
+- machine/largo
 ---
 
 # Agentic Living Document Playbook

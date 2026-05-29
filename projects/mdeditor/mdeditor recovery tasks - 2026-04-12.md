@@ -1,11 +1,16 @@
 ---
 title: mdeditor recovery tasks - 2026-04-12
 type: note
+entity_type: note
+status: superseded
+created: 2026-04-12
+modified: 2026-05-28
 permalink: kb/projects/mdeditor/mdeditor-recovery-tasks-2026-04-12
 tags:
-- tasks
-- mdeditor
-- recovery
+- project/mdeditor
+- op/tasks
+- phase/recovery
+- status/superseded
 ---
 
 # mdeditor recovery tasks - 2026-04-12
@@ -40,3 +45,14 @@ tags:
 - [ ] Run `pnpm lint`.
 - [ ] Run `pnpm build`.
 - [ ] Run `node scripts/test-recovery-regressions.mjs`.
+
+## Relations
+
+- part_of [[mdeditor]]
+- superseded_by [[mdeditor rewind tasks - 2026-04-13]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Added missing frontmatter (entity_type, status, created, modified); namespaced flat tags; set status `superseded` and added `superseded_by` relation to the rewind track plus `part_of` link to the project root. | Note lacked required frontmatter and graph links; the 2026-04-13 rewind explicitly reverted this GSAP/panzoom recovery plan. | KB curation sweep — projects/ partition. |

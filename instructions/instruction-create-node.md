@@ -9,6 +9,8 @@ tags:
 - project/agent-kb
 - op/create-node
 - status/evergreen
+- source/largo
+- machine/largo
 permalink: agent-kb/instructions/instruction-create-node
 ---
 

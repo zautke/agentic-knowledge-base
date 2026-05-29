@@ -11,6 +11,8 @@ tags:
 - domain/curation
 - op/protocol
 - op/ingestion
+- source/largo
+- machine/largo
 ---
 
 # Codebase KB Ingestion Protocol

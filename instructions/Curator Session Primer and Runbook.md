@@ -13,6 +13,8 @@ tags:
 - op/session-start
 - role/curator
 - status/evergreen
+- source/largo
+- machine/largo
 permalink: agent-kb/instructions/curator-session-primer-and-runbook
 ---
 

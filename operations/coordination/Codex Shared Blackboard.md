@@ -1,7 +1,11 @@
 ---
 title: Codex Shared Blackboard
 type: note
+entity_type: note
 permalink: agent-kb/operations/coordination/codex-shared-blackboard
+created: 2026-04-21
+modified: 2026-05-28
+status: active
 tags:
 - project/agent-kb
 - domain/codex

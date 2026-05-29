@@ -12,6 +12,8 @@ tags:
 - domain/google-drive
 - status/evergreen
 - op/create-node
+- source/largo
+- machine/largo
 ---
 
 # Agentic Runbook - Google Drive for desktop Complete Purge on macOS

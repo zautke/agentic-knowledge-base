@@ -1,7 +1,11 @@
 ---
 title: Operational Session - adagio Docker Context Switch Repair (2026-03-19)
 type: note
+entity_type: note
 permalink: kb/operations/machines/operational-session-adagio-docker-context-switch-repair-2026-03-19
+created: 2026-03-19
+modified: 2026-05-28
+status: draft
 tags:
 - project/agent-kb
 - domain/docker

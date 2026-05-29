@@ -1,8 +1,27 @@
 ---
 title: Planning - Multi-Agent Orchestration Platform
 type: planning
+entity_type: planning
+status: active
+created: 2026-04-19
+modified: 2026-05-28
 permalink: kb/projects/agent-toolkit/planning-multi-agent-orchestration-platform
+tags:
+- project/agent-toolkit
+- domain/multi-agent
+- domain/agent-engineering
+- op/planning
+- status/active
+- cross-project-overlap
 ---
+
+> **Cross-project overlap (flagged 2026-05-28):** This note is filed under
+> `agent-toolkit` but describes the "Multi-Agent Orchestration Platform," which
+> also has its own canonical project folder at `projects/multi-agent-platform/`
+> (declared in that project's `project.json`). Whether these planning notes
+> belong under `agent-toolkit` or `multi-agent-platform` is a cross-project
+> ownership decision deferred to index reconciliation. See [[project]]
+> (multi-agent-platform).
 
 # Planning
 
@@ -169,3 +188,16 @@ Build work starts when:
 - `PLANNING.md`, `TASKS.md`, and `SESSION_HISTORY.md` are present locally
 - the same artifacts are mirrored in Basic Memory
 - all P0 tasks are queued with IDs and owners
+
+## Relations
+
+- related_to [[Tasks - Multi-Agent Orchestration Platform]]
+- related_to [[Session History - Multi-Agent Orchestration Platform]]
+- derived_from [[LangGraph Multi-Agent Platform Discovery - 2026-04-18]]
+- overlaps [[project]] <!-- multi-agent-platform project.json; cross-project ownership to be reconciled -->
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Added missing frontmatter (entity_type, status, created, modified, tags); added Relations block; flagged cross-project overlap with the `multi-agent-platform` project folder. | Note had only 2 frontmatter fields and no relations; its "Multi-Agent Orchestration Platform" subject overlaps a separate canonical project. | KB curation sweep — projects/ partition. |

@@ -12,6 +12,8 @@ tags:
 - domain/curation
 - system/core
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Document Curation Metaprompt

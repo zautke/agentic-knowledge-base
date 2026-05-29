@@ -159,12 +159,13 @@ class FaithfulnessMetricCalculator(MetricCalculator):
 ## Relations
 
 - part_of [[Hybrid RAG Architecture – SOTA 2025-2026]]
-- related_to [[RAG Evaluation Pipeline Overview]]
+- related_to [[RAG Evaluation Pipeline - Module Overview]]
 - related_to [[RAG Evaluation Metrics Reference]]
-- implemented_by [[graphrag: Evaluation RAGAS Mapping]]
+- implemented_by [[graphrag Evaluation RAGAS Mapping]]
 
 ## Evolution Log
 
 | Date | Change | Reason | Trigger |
 |------|--------|--------|---------|
 | 2026-03-29 | Initial creation | Layer 2-C research: RAGAS v0.4.3 deep-dive | graphrag plugin implementation sprint |
+| 2026-05-28 | Repaired two broken relation links: `[[RAG Evaluation Pipeline Overview]]` → `[[RAG Evaluation Pipeline - Module Overview]]` and `[[graphrag: Evaluation RAGAS Mapping]]` → `[[graphrag Evaluation RAGAS Mapping]]` (matched to real note titles) | Links never resolved | KB curation hygiene sweep (operations/reference partition) |

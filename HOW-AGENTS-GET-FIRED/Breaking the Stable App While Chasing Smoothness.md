@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: evergreen
 title: Breaking the Stable App While Chasing Smoothness
 type: note
 permalink: kb/how-agents-get-fired/breaking-the-stable-app-while-chasing-smoothness
@@ -8,6 +12,8 @@ tags:
 - verification-mismatch
 - mdeditor
 - session-2026-04-13
+- source/largo
+- machine/largo
 ---
 
 # Breaking the Stable App While Chasing Smoothness

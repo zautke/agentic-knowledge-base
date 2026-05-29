@@ -1,11 +1,17 @@
 ---
 title: planning
 type: note
+entity_type: note
+status: active
+created: 2026-04-11
+modified: 2026-05-28
 permalink: kb/projects/multi-agent-helm/planning
 tags:
-- multi-agent
-- helm
-- planning
+- project/multi-agent-helm
+- domain/multi-agent
+- domain/kubernetes
+- op/planning
+- status/active
 ---
 
 # Planning
@@ -35,3 +41,15 @@ Build a one-command local Kubernetes platform for a multi-agent, event-driven mi
 3. Fix any first-deploy chart, image, or rollout failures.
 4. Add cluster-level smoke tests.
 5. Begin replacing stub worker logic with real agent implementations.
+
+## Relations
+
+- part_of [[Project Index]]
+- related_to [[Tasks]]
+- related_to [[Distributed A2A Helm Scaffold]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Frontmatter normalized (entity_type, status, created, modified; namespaced tags, added `op/planning`); added Relations block linking to hub, tasks, and scaffold. | Note lacked required frontmatter and graph links. | KB curation sweep — projects/ partition. |

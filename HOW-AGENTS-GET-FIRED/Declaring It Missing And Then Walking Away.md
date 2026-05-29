@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: evergreen
 title: Declaring It Missing And Then Walking Away
 type: note
 permalink: how-agents-get-fired/declaring-it-missing-and-then-walking-away
@@ -7,6 +11,8 @@ tags:
 - last-inch-failure
 - accountability
 - resource-waste
+- source/largo
+- machine/largo
 ---
 
 # Declaring It Missing And Then Walking Away

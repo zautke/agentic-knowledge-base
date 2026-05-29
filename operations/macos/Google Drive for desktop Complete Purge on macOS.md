@@ -1,13 +1,18 @@
 ---
 title: Google Drive for desktop Complete Purge on macOS
 type: note
+entity_type: note
 permalink: operations/macos/google-drive-for-desktop-complete-purge-on-mac-os
+created: 2026-04-21
+modified: 2026-05-28
+status: evergreen
 tags:
-- google-drive
-- macos
-- uninstall
-- purge
-- operations
+- project/agent-kb
+- domain/google-drive
+- domain/macos
+- op/purge
+- op/uninstall
+- status/evergreen
 ---
 
 # Google Drive for desktop Complete Purge on macOS

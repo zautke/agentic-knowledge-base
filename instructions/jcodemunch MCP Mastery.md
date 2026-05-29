@@ -10,6 +10,8 @@ tags:
 - token-efficiency
 - ast
 - tools
+- source/largo
+- machine/largo
 ---
 
 # jcodemunch MCP Mastery

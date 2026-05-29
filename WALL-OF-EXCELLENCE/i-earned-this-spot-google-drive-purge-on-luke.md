@@ -13,6 +13,8 @@ tags:
 - domain/google-drive
 - domain/macos
 - status/active
+- source/largo
+- machine/largo
 permalink: wall-of-excellence/i-earned-this-spot-google-drive-purge-on-luke
 ---
 

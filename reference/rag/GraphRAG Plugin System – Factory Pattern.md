@@ -123,7 +123,7 @@ Every category ships with a null implementation that:
 ## Relations
 
 - part_of [[Hybrid RAG Architecture – SOTA 2025-2026]]
-- implemented_by [[graphrag: Plugin Categories Registry]]
+- implemented_by [[graphrag Plugin Categories Registry]]
 - related_to [[Agentic Knowledge Base System Overview]]
 
 ## Evolution Log
@@ -131,3 +131,4 @@ Every category ships with a null implementation that:
 | Date | Change | Reason | Trigger |
 |------|--------|--------|---------|
 | 2026-03-29 | Initial creation | Layer 2-A research: plugin factory pattern analysis | graphrag plugin implementation sprint |
+| 2026-05-28 | Repaired broken relation link `[[graphrag: Plugin Categories Registry]]` → `[[graphrag Plugin Categories Registry]]` (matched to real note title) | Colon-style link never resolved | KB curation hygiene sweep (operations/reference partition) |

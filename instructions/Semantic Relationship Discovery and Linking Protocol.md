@@ -12,6 +12,8 @@ tags:
 - domain/taxonomy
 - op/relate-nodes
 - status/evergreen
+- source/largo
+- machine/largo
 permalink: instructions/semantic-relationship-discovery-and-linking-protocol
 ---
 

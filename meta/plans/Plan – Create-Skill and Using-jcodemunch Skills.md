@@ -1,4 +1,7 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: plan
 title: Plan – Create-Skill and Using-jcodemunch Skills
 type: plan
 permalink: agent-kb/meta/plans/plan-create-skill-and-using-jcodemunch-skills
@@ -9,6 +12,8 @@ tags:
 - jcodemunch
 - create-skill
 - metaskill
+- source/largo
+- machine/largo
 ---
 
 # Plan: Create-Skill and Using-jcodemunch Skills

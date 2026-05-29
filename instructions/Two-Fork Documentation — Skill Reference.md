@@ -11,6 +11,8 @@ tags:
 - domain/curation
 - domain/documentation
 - op/protocol
+- source/largo
+- machine/largo
 ---
 
 # Two-Fork Documentation — Skill Reference

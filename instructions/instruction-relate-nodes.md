@@ -9,6 +9,8 @@ tags:
 - project/agent-kb
 - op/relate-nodes
 - status/evergreen
+- source/largo
+- machine/largo
 permalink: agent-kb/instructions/instruction-relate-nodes
 ---
 

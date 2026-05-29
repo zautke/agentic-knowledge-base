@@ -10,6 +10,8 @@ tags:
 - token-efficiency
 - cso
 - agentskills
+- source/largo
+- machine/largo
 ---
 
 # Claude Skill Authoring Mastery

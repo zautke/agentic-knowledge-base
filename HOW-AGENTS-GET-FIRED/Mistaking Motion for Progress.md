@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: failure-case
+status: evergreen
 title: Mistaking Motion for Progress
 type: failure-case
 permalink: how-agents-get-fired/mistaking-motion-for-progress
@@ -8,6 +12,8 @@ tags:
 - demo-failure
 - accountability
 - session-2026-04-11
+- source/largo
+- machine/largo
 ---
 
 # Mistaking Motion for Progress

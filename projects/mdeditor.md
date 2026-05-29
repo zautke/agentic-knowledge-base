@@ -1,17 +1,26 @@
 ---
 title: mdeditor
-type: note
+type: reference
+entity_type: reference
+status: active
+created: 2026-04-12
+modified: 2026-05-28
 permalink: projects/mdeditor
 tags:
-- project
-- react
-- markdown
-- editor
-- typescript
-- vite
+- project/mdeditor
+- domain/markdown
+- domain/editor
+- stack/react
+- stack/typescript
+- stack/vite
+- status/active
 ---
 
 # mdeditor
+
+> **Project root entity** for the mdeditor React markdown editor. Task/session
+> notes live under `projects/mdeditor/`: [[mdeditor recovery tasks - 2026-04-12]]
+> and [[mdeditor rewind tasks - 2026-04-13]].
 
 A React-based markdown editor with live preview, syntax highlighting, and multiple styling themes.
 
@@ -69,13 +78,15 @@ pnpm build       # Production build
 
 ## Relations
 
-- uses [[React]]
-- uses [[Vite]]
-- uses [[TypeScript]]
-- uses [[Tailwind CSS]]
-- implements [[GitHub Flavored Markdown]]
-- implements [[Mermaid Diagrams]]
-- implements [[MathJax Equations]]
+- has_track [[mdeditor recovery tasks - 2026-04-12]]
+- has_track [[mdeditor rewind tasks - 2026-04-13]]
+- uses [[React]] <!-- unresolved: no global React reference note exists in KB yet; left as aspirational bridge target -->
+- uses [[Vite]] <!-- unresolved: no global Vite reference note exists in KB yet -->
+- uses [[TypeScript]] <!-- unresolved: no global TypeScript reference note exists in KB yet -->
+- uses [[Tailwind CSS]] <!-- unresolved: no global Tailwind CSS reference note exists in KB yet -->
+- implements [[GitHub Flavored Markdown]] <!-- unresolved: no global GFM reference note exists in KB yet -->
+- implements [[Mermaid Diagrams]] <!-- unresolved: no global Mermaid reference note exists in KB yet -->
+- implements [[MathJax Equations]] <!-- unresolved: no global MathJax reference note exists in KB yet -->
 
 ## Current Recovery Track — 2026-04-12
 
@@ -116,3 +127,9 @@ pnpm build       # Production build
 ### Latest browser evidence
 - Verified on `http://127.0.0.1:5200` via Chrome DevTools snapshot: Mermaid assets expose `Zoom media`, opening shows `Collapse media`, and closing returns to inline state with the blurred backdrop still present.
 - User-visible confirmation is still required before any further animation work proceeds.
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Added missing frontmatter (type/entity_type reference, status, created, modified); namespaced flat tags (`project`/`react`/`markdown`/`editor`/`typescript`/`vite` → `project/mdeditor`, `domain/`, `stack/`). Added inbound links to the two task-track notes and annotated 7 unresolved global stack-reference relation targets with reasons (those global notes do not yet exist). | Root note lacked 4 required frontmatter fields, used flat tags, and pointed at non-existent global reference notes with no annotation. | KB curation sweep — projects/ partition. |

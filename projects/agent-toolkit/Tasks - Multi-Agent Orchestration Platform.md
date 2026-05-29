@@ -1,7 +1,17 @@
 ---
 title: Tasks - Multi-Agent Orchestration Platform
 type: tasks
+entity_type: tasks
+status: active
+created: 2026-04-19
+modified: 2026-05-28
 permalink: kb/projects/agent-toolkit/tasks-multi-agent-orchestration-platform
+tags:
+- project/agent-toolkit
+- domain/multi-agent
+- op/tasks
+- status/active
+- cross-project-overlap
 ---
 
 # Tasks
@@ -96,3 +106,14 @@ Status legend: `[ ]` pending, `[-]` in progress, `[x]` done, `[!]` blocked
 - [x] `B-001` Confirm repository bootstrap choices (`pnpm` vs alternative)
 - [ ] `B-002` Confirm initial deployment target (local docker vs cloud first)
 - [ ] `B-003` Confirm first MCP integration set for P3 acceptance tests
+
+## Relations
+
+- related_to [[Planning - Multi-Agent Orchestration Platform]]
+- related_to [[Session History - Multi-Agent Orchestration Platform]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Added missing frontmatter (entity_type, status, created, modified, tags); added Relations block; flagged cross-project overlap. | Note had only 2 frontmatter fields and no relations. | KB curation sweep — projects/ partition. |

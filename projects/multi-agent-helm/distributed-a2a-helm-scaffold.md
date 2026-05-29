@@ -1,18 +1,23 @@
 ---
 title: distributed-a2a-helm-scaffold
 type: note
+entity_type: note
+status: active
+created: 2026-04-11
+modified: 2026-05-28
 permalink: kb/projects/multi-agent-helm/distributed-a2a-helm-scaffold
 tags:
-- multi-agent
-- helm
-- kubernetes
-- nats
-- kong
-- fastapi
-- grpc
-- redis
-- postgres
-- chromadb
+- project/multi-agent-helm
+- domain/multi-agent
+- domain/kubernetes
+- stack/nats
+- stack/kong
+- stack/fastapi
+- stack/grpc
+- stack/redis
+- stack/postgres
+- stack/chromadb
+- status/active
 ---
 
 # Distributed A2A Helm Scaffold
@@ -66,3 +71,15 @@ Implemented a greenfield local-first Kubernetes scaffold in `distributed/` for a
 - `docs/PLANNING.md`
 - `SESSION_HISTORY.md`
 - `TASKS.md`
+
+## Relations
+
+- part_of [[Project Index]]
+- documented_by [[System Architecture Diagram]]
+- related_to [[Planning]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Frontmatter normalized (entity_type, status, created, modified; `multi-agent`/`helm` flat tags → `project/`+`domain/` namespaced tags, infra tags moved to `stack/`); added Relations block and link back to project hub. | Note lacked required frontmatter fields and had no relations linking it into the project graph. | KB curation sweep — projects/ partition. |

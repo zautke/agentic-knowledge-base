@@ -2,6 +2,8 @@
 title: FastMCP in Agentic Systems
 type: reference
 permalink: agent-kb/reference/tools/fast-mcp-in-agentic-systems
+created: 2026-04-21
+modified: 2026-05-28
 entity_type: reference
 status: evergreen
 tags:

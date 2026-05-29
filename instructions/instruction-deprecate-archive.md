@@ -9,6 +9,8 @@ tags:
 - project/agent-kb
 - op/deprecate-archive
 - status/evergreen
+- source/largo
+- machine/largo
 permalink: agent-kb/instructions/instruction-deprecate-archive
 ---
 

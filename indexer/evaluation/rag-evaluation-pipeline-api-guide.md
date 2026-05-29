@@ -1,6 +1,15 @@
 ---
 type: api-reference
-tags: [rag, evaluation, api, typescript, indexer, metrics, benchmark]
+tags:
+- rag
+- evaluation
+- api
+- typescript
+- indexer
+- metrics
+- benchmark
+- source/largo
+- machine/largo
 created: 2026-01-21
 module: src/evaluation
 permalink: memory://indexer/evaluation/rag-evaluation-pipeline-api-guide

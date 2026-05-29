@@ -1,14 +1,19 @@
 ---
 title: Cloudflare Access rollout and rollback protocol for tunnel hostnames
 type: note
+entity_type: note
 permalink: kb/operations/cloudflare-access-rollout-and-rollback-protocol-for-tunnel-hostnames
+created: 2026-04-21
+modified: 2026-05-28
+status: evergreen
 tags:
-- operation
-- cloudflare
-- access
-- tunnel
-- rollback
-- runbook
+- project/agent-kb
+- domain/cloudflare
+- domain/access
+- domain/tunnel
+- op/runbook
+- op/rollback
+- status/evergreen
 ---
 
 # Cloudflare Access rollout and rollback protocol for tunnel hostnames

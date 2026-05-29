@@ -12,6 +12,8 @@ tags:
 - domain/google-drive
 - status/evergreen
 - op/create-node
+- source/largo
+- machine/largo
 ---
 
 # Instruction Manual - Google Drive for desktop Recovery Operations on macOS

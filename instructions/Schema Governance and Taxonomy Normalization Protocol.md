@@ -12,6 +12,8 @@ tags:
 - domain/curation
 - op/hygiene
 - status/evergreen
+- source/largo
+- machine/largo
 permalink: agent-kb/instructions/schema-governance-and-taxonomy-normalization-protocol
 ---
 

@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: evergreen
 title: Retrospective Manual Creation Methodology
 type: note
 permalink: meta/agent-actions/retrospective-manual-creation-methodology
@@ -8,6 +12,8 @@ tags:
 - documentation
 - pattern-extraction
 - globally-applicable
+- source/largo
+- machine/largo
 ---
 
 # Retrospective Manual Creation Methodology

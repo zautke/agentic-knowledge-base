@@ -10,6 +10,8 @@ tags:
 - domain/system-inventory
 - op/profile-machine
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Machine Profile Collection and Curation Protocol

@@ -1,7 +1,19 @@
 ---
 title: Material UI Design System
 type: note
+entity_type: note
 permalink: agent-kb/domains/material-ui-design-system
+created: 2026-04-21
+modified: 2026-05-28
+status: evergreen
+tags:
+- project/agent-kb
+- domain/design-system
+- domain/material-ui
+- domain/frontend
+- status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Material UI Design System (MUI 7 + Storybook)
@@ -67,3 +79,16 @@ const FormDialog = () => {
 ## Troubleshooting
 - **Turbopack Conflict**: If `next dev` fails with Webpack config errors, use `next dev --webpack` to force Webpack mode.
 - **Font Issues**: Verify `@fontsource` imports in `.storybook/preview.js` if icons or fonts are missing.
+
+## Relations
+
+- related_to [[design-system-workflow]]
+- related_to [[Browser Automation]]
+- related_to [[shadcn-tailwind-design-system-founding-document]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-04-21 | Domain note captured (git import date) | Anchor the MUI 7 + Storybook design-system domain knowledge | KB seeding |
+| 2026-05-28 | Completed frontmatter to 7-field KB contract (added entity_type/created/modified/status, added `domain/design-system`, `domain/material-ui`, `domain/frontend`, `project/agent-kb` tags); added Relations section linking the design-system workflow note, the browser-automation domain, and the shadcn/Tailwind founding document | Note was an orphan with source/machine-only tags and no relations | KB curation hygiene sweep (operations/reference partition) |

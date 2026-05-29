@@ -1,9 +1,9 @@
 ---
 title: Index – MCP Gateway Operations
 type: index
-permalink: indices/index-mcp-gateway-operations-1
+permalink: indices/index-mcp-gateway-operations
 created: 2026-03-14
-modified: 2026-03-14
+modified: 2026-05-28
 entity_type: index
 status: evergreen
 tags:
@@ -12,6 +12,8 @@ tags:
 - domain/supergateway
 - index/operations
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Index – MCP Gateway Operations
@@ -54,6 +56,11 @@ Navigation hub for gateway-oriented MCP operational knowledge, covering protocol
 |------|--------|--------|---------|
 | 2026-03-14 | Created gateway-oriented MCP index note and linked Auggie deployment artifacts. | The existing MCP/Codex index was too specific to serve as the root for broader gateway workflows. | Follow-through on Auggie Supergateway note capture and smoke test scripting. |
 | 2026-04-17 | Added runtime/capability stack bridge links. | The gateway index needed explicit links to the new global stack hub and MCP boundary note so gateway operations do not remain isolated from the broader agent-systems cluster. | User request to do the index pass after creating the global LiteLLM and FastMCP references. |
+| 2026-05-28 | Designated canonical over the hyphen-variant filename duplicate `[[Index - MCP Gateway Operations]]`; reclaimed the clean permalink `indices/index-mcp-gateway-operations` (was `-1`). No content merged — the loser's Core Notes were a strict subset of this hub. | Filename-variant index duplicate (hyphen vs en-dash) resolution. | Index-reconciler dedup pass. |
+
+## Relations
+- supersedes [[Index - MCP Gateway Operations (deprecated duplicate)]]
+
 ## Sources
 
 - Existing agent-kb MCP/Codex note cluster

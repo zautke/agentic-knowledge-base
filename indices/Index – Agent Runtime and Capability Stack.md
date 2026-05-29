@@ -9,6 +9,8 @@ tags:
 - domain/agent-systems
 - index/agent-runtime
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Index – Agent Runtime and Capability Stack

@@ -1,7 +1,7 @@
 ---
 title: Fundamental – Agent KB
 created: 2026-01-01
-modified: 2026-01-01
+modified: 2026-05-28
 type: fundamental
 entity_type: fundamental
 status: evergreen
@@ -9,6 +9,8 @@ tags:
 - project/agent-kb
 - domain/memory-system
 - status/evergreen
+- source/largo
+- machine/largo
 aliases:
 - Agent KB root
 permalink: agent-kb/fundamentals/fundamental-agent-kb
@@ -71,3 +73,19 @@ Required closeout contents:
 - exact links added or left unresolved
 - exact discovery approach used to find related notes and determine taxonomy placement
 - explicit statement of what may have been overlooked
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Added the mandatory Evolution Log and an explicit Relations block; bumped `modified` from the stale `2026-01-01` value. Section numbering left intact per Rule 7 (the orphan `## 6`/`## 7` headings are preserved to avoid breaking cross-references). | This root fundamental was a living governance doc with no append-only Evolution Log, violating Metaprompt Rule 5, and its entry-point links were maintained as ad-hoc lists rather than a typed Relations block. | Governance-doc curation sweep over `fundamentals/`. |
+
+## Relations
+
+- explains [[Agentic Knowledge Base System Overview]]
+- has_entry_point [[Index – Agent KB]]
+- has_entry_point [[Action Taxonomy – Index]]
+- has_entry_point [[Document Curation Metaprompt]]
+- related_to [[Curator Handover Knowledge]]
+- related_to [[KB Submission Quality Protocol]]
+- related_to [[Curator Session Primer and Runbook]]

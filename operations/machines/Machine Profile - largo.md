@@ -123,14 +123,49 @@ Canonical host/system and SSH client profile for machine `largo`, captured from 
 - The browser-rendered terminal path on `largo` now has an authoritative root `cloudflared` service path rather than an implicit user-scoped tunnel assumption.
 - Active root tunnel config terminates `ssh.braisenly.com` to `ssh://localhost:22` and `opencode.braisenly.com` to `http://127.0.0.1:4096`.
 - Stability baseline on this host now explicitly includes `ServerAliveInterval 30`, `ServerAliveCountMax 6`, `ClientAliveInterval 30`, `ClientAliveCountMax 6`, and `TCPKeepAlive no` on both sides.
-- The active server config path for `sshd` on `largo` was verified as `/opt/homebrew/etc/ssh/sshd_config`; editing `/etc/ssh/sshd_config` alone would not affect the live daemon.
+- Later verification on 2026-05-10 superseded the earlier `sshd` path assumption: the live browser-rendered SSH path is the macOS socket-activated `com.openssh.sshd`, and authoritative config is `/etc/ssh/sshd_config` plus `/etc/ssh/sshd_config.d/*.conf`.
 - Root `cloudflared` is pinned to `http2` with resolver pinning because pre-repair logs showed QUIC idle timeouts and resolver instability.
 - Reusable local operational helpers now exist in `~/.ssh/apply-root-terminal-stability.sh` and `~/.ssh/diagnose-terminal-stack.sh`.
 - Canonical domain notes for this new stack are [[Cloudflare Browser Rendering on largo]], [[Runbook - Cloudflare Browser Rendering Terminal Verification and Recovery on largo]], and [[Operational Session - Cloudflare Browser Rendering Terminal Stabilization on largo (2026-04-21)]].
 
+### 2026-05-10 Cloudflare Access Session Delta
+- SSH Access apps `ssh.braisenly.com` and `largo.braisenly.com/ssh` were updated from `24h` to `720h` (30 days) at the app level.
+- App-local `Allow derp browser ssh` policies were also updated from `24h` to `720h`.
+- The shared reusable Access policy remained at `24h` so unrelated protected surfaces were not broadened.
+
+### 2026-04-29 Cloudflare Hostname Alias Delta
+- Tunnel `3227fecc-8f59-41e4-9501-ab8235bc42f3` was updated to include additional ingress aliases:
+  - `ssh.largo.braisenly.com` -> `ssh://localhost:22`
+  - `opencode.largo.braisenly.com` -> `http://127.0.0.1:4096`
+- DNS records were added for both aliases, proxied to `3227fecc-8f59-41e4-9501-ab8235bc42f3.cfargotunnel.com`.
+- Tunnel config source moved from `local` to `cloudflare` for this tunnel after API configuration update.
+- Immediate validation showed TLS handshake failures on both nested aliases, consistent with missing certificate coverage for `*.largo.braisenly.com`.
+- At the same time, existing one-label hostnames remained mapped and healthy at the control-plane level:
+  - `ssh.braisenly.com` -> `3227...cfargotunnel.com`
+  - `opencode.braisenly.com` -> `9c40...cfargotunnel.com`
+
+### 2026-04-30 Cloudflare Fallback Hostname Delta
+- Access apps were added for one-label fallback hostnames:
+  - `ssh-largo.braisenly.com`
+  - `opencode-largo.braisenly.com`
+- External edge checks returned `302` for those one-label hostnames (expected Access redirect path).
+- Nested aliases (`ssh.largo.braisenly.com`, `opencode.largo.braisenly.com`) still failed TLS handshake.
+- Advanced certificate API ordering remained blocked by credential scope; existing local tokens did not have SSL certificate write access.
+
+### 2026-05-10 User `derp` Base-Hostname Recovery Delta
+- User-local `opencode` installation was already present at `/Users/derp/.opencode/bin/opencode`; the missing piece was process supervision.
+- A user LaunchAgent was added to keep the local web origin alive on `127.0.0.1:4096`:
+  - `/Users/derp/Library/LaunchAgents/com.braisenly.opencode.web.plist`
+  - `/Users/derp/.cloudflared/start_opencode_web.sh`
+- The environment source of truth for this user was confirmed as `~/.bash/.env`, which is a symlink to `/Users/derp/vault/obsidian/comp/common_machines/global_env.md`.
+- After loading the LaunchAgent, `opencode` returned `200` on `http://127.0.0.1:4096/` and the base public hostnames continued returning `302` through Cloudflare Access.
+
 ## 6) Evidence Registry
 | Date (UTC) | Context | Concrete example | Source |
 |---|---|---|---|
+| 2026-05-10 | Base-hostname recovery for user `derp` on `largo` | User LaunchAgent `com.braisenly.opencode.web` restored `opencode` on `127.0.0.1:4096`; `ssh.braisenly.com` and `opencode.braisenly.com` both returned `302` through Access after recovery; SSH Access session for the `derp` browser path was extended from `24h` to `720h` | Local `launchctl`, local HTTP probe, public curl probes from `largo`, and Cloudflare Access API verification |
+| 2026-04-30 | Fallback hostname activation under nested-subdomain TLS constraint | `ssh-largo.braisenly.com` and `opencode-largo.braisenly.com` returned `302` while nested aliases still failed TLS handshake; certificate API order attempts failed due auth/scope mismatch | Cloudflare Access app API, DNS/tunnel config API, and local curl probes from `largo` |
+| 2026-04-29 | Hostname alias cutover for browser-rendered terminal stack on `largo` | Tunnel `3227...` ingress updated with `ssh.largo.braisenly.com` and `opencode.largo.braisenly.com`; DNS CNAMEs created; control plane healthy; direct HTTPS probes returned TLS handshake failures indicating nested-subdomain cert coverage gap | Cloudflare API (`/cfd_tunnel/.../configurations`, `/zones/.../dns_records`) plus local curl probes from `largo` |
 | 2026-04-21 | Browser-rendered terminal stability capture on `largo` | Root `cloudflared` config showed `ssh.braisenly.com -> ssh://localhost:22`; logs showed pre-repair QUIC idle failures and post-repair `Initial protocol http2`; effective `sshd` config confirmed Homebrew path plus `ClientAliveInterval 30` / `ClientAliveCountMax 6` / `TCPKeepAlive no` | Local config inspection, `sshd -T`, `ssh -G`, and `/Library/Logs/cloudflare/cloudflared.err.log` on `largo` |
 | 2026-02-18 | Host identity capture on `largo` | `hostname -> largo.local`, `whoami -> luke`, `sw_vers -> macOS 26.3` | Local shell commands on `largo` |
 | 2026-02-18 | Host identity capture on `largo` | `hostname -> largo.local`, `whoami -> luke`, `sw_vers -> macOS 26.3` | Local shell commands on `largo` |
@@ -181,6 +216,9 @@ This note is the authoritative current-state profile for `largo`. Re-run the sam
 ## Evolution Log
 | Date | Change | Reason | Trigger |
 |---|---|---|---|
+| 2026-05-10 | Added user-`derp` LaunchAgent recovery delta and evidence for restoring the base Cloudflare browser-rendering hostnames without tunnel recreation. | Preserve the actual fix path: the tunnel plane was healthy and only the local `opencode` origin plus process supervision needed repair. | User request to bring the `ssh` and `opencode` tunnels back up for a new user on the same machine. |
+| 2026-04-30 | Added one-label fallback-hostname delta, evidence row, and SSL-token scope blocker for nested-hostname cert remediation. | Preserve the operationally working fallback path and prevent repeated credential-scope debugging for advanced cert ordering. | Follow-up execution to restore largo endpoints after nested hostname TLS failures. |
+| 2026-04-29 | Added hostname-alias delta and evidence for `ssh.largo.braisenly.com` / `opencode.largo.braisenly.com`, including cert-coverage failure mode. | Preserve operational context for the machine-scoped alias cutover and prevent repeated rediscovery of nested-subdomain TLS behavior. | User request to bring `ssh.largo.braisenly.com` and `opencode.largo.braisenly.com` online on this machine. |
 | 2026-04-21 | Added browser-rendering transport delta, Cloudflare control-plane references, and related-note links for the stabilized iPad terminal path | The machine profile needed to reflect that `largo` now has a canonical browser-rendered terminal stack with root tunnel ownership and explicit SSH keepalive policy | User request to build the `cloudflare browser rendering` KB foundation and relate it back into existing infrastructure notes |
 | 2026-02-18 | Created full machine profile for `largo` with host/system, network, SSH environment, alias map, and session interop notes | Establish canonical infra evidence record in `agent-kb` under strict curation protocol | User request for Curator-Infra machine profiling |
 | 2026-02-18 | Created full machine profile for `largo` with host/system, network, SSH environment, alias map, and session interop notes | Establish canonical infra evidence record in `agent-kb` under strict curation protocol | User request for Curator-Infra machine profiling |
@@ -189,6 +227,7 @@ This note is the authoritative current-state profile for `largo`. Re-run the sam
 | 2026-03-15 | Added mirrored-mode interoperability delta and evidence rows for stale `tyggr` hosts mapping, `en0` routing verification, and Windows/WSL banner-exchange failures | Preserve topology drift and current client-side evidence after the move from WSL bridge mode to mirrored mode | User request to research and curate the current SSH failure state |
 
 ## Relations
+- related_to [[SSH Recovery Snapshot - largo and adagio (2026-04-28)]]
 - related_to [[Index - Cloudflare Browser Rendering Operations]]
 - related_to [[Cloudflare Browser Rendering on largo]]
 - related_to [[Runbook - Cloudflare Browser Rendering Terminal Verification and Recovery on largo]]

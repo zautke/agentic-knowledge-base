@@ -12,6 +12,8 @@ tags:
 - domain/codex
 - index/operations
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Index – MCP and Codex Operations

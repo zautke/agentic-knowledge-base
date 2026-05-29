@@ -1,11 +1,17 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: instruction
+status: evergreen
 title: traverse-context
 type: instruction
 permalink: meta/agent-actions/traverse-context
 tags:
-- '["system/action"'
-- '"meta/instruction"'
-- '"type/traverse"]'
+  - system/action
+  - meta/instruction
+  - type/traverse
+  - source/largo
+  - machine/largo
 ---
 
 # Action: Traverse Context

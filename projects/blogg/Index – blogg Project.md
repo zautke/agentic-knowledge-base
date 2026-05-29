@@ -4,6 +4,8 @@ type: index
 permalink: projects/blogg/index
 entity_type: index
 status: evergreen
+created: 2026-04-21
+modified: 2026-05-28
 tags:
 - project/blogg
 - meta/index

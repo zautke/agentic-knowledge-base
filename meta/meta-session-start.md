@@ -8,6 +8,8 @@ status: evergreen
 tags:
 - meta/primer
 - project/agent-kb
+- source/largo
+- machine/largo
 permalink: agent-kb/meta/meta-session-start
 ---
 

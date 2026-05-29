@@ -1,7 +1,11 @@
 ---
 title: Codex Parallel Task B - Foreman Control
 type: note
+entity_type: note
 permalink: agent-kb/operations/coordination/tasks/codex-parallel-task-b-foreman-control
+created: 2026-04-21
+modified: 2026-05-28
+status: active
 tags:
 - project/agent-kb
 - domain/codex

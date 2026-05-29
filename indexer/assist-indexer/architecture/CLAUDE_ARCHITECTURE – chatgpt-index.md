@@ -11,6 +11,8 @@ tags:
 - domain/architecture
 - domain/data-pipeline
 - domain/search
+- source/largo
+- machine/largo
 ---
 
 # CLAUDE_ARCHITECTURE – chatgpt-index

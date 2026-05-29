@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: evergreen
 title: How to be an ineffective agent and waste time and resources
 type: note
 permalink: how-agents-get-fired/how-to-be-an-ineffective-agent-and-waste-time-and-resources
@@ -10,6 +14,8 @@ tags:
 - theme-editor
 - self-learning-agents
 - resource-waste
+- source/largo
+- machine/largo
 ---
 
 # How to be an ineffective agent and waste time and resources

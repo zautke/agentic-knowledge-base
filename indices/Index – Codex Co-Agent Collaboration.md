@@ -8,6 +8,8 @@ tags:
 - domain/coordination
 - index/collaboration
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Index – Codex Co-Agent Collaboration

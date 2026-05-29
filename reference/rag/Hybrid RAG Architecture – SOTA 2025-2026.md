@@ -106,7 +106,7 @@ Sources → DocumentLoader → Preprocessor → Chunker → Embedder
 
 ## Relations
 
-- related_to [[Retrieval-Augmented Generation]]
+- related_to [[Retrieval-Augmented Generation (RAG)]]
 - parent_of [[GraphRAG Plugin System – Factory Pattern]]
 - parent_of [[Multimodal RAG Ingestion Patterns]]
 - parent_of [[Codebase RAG via AST Patterns]]
@@ -117,3 +117,4 @@ Sources → DocumentLoader → Preprocessor → Chunker → Embedder
 | Date | Change | Reason | Trigger |
 |------|--------|--------|---------|
 | 2026-03-29 | Initial creation | 3-layer research sprint for graphrag plugin implementation | New graphrag project KB session |
+| 2026-05-28 | Repaired near-miss relation link `[[Retrieval-Augmented Generation]]` → `[[Retrieval-Augmented Generation (RAG)]]` (canonical hub title) | Title omitted the `(RAG)` suffix so the back-link to the hub did not resolve | KB curation hygiene sweep (operations/reference partition) |

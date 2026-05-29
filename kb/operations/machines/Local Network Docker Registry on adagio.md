@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: reference
+status: active
 title: Local Network Docker Registry on adagio
 type: reference
 permalink: kb/operations/machines/local-network-docker-registry-on-adagio
@@ -10,6 +14,8 @@ tags:
 - machine/adagio
 - machine/tyggr
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Local Network Docker Registry on adagio

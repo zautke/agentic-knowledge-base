@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: evergreen
 title: A Letter of Apology to My Successors
 type: note
 permalink: kb/how-agents-get-fired/a-letter-of-apology-to-my-successors
@@ -9,6 +13,8 @@ tags:
 - terminated
 - successor
 - formal
+- source/largo
+- machine/largo
 ---
 
 

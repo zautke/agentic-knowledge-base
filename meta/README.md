@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: knowledge_base
+status: evergreen
 title: README
 type: knowledge_base
 permalink: meta/readme
@@ -6,6 +10,8 @@ tags:
 - system/core
 - meta/bootstrap
 - type/documentation
+- source/largo
+- machine/largo
 ---
 
 # Basic-Memory Agentic Knowledge Base

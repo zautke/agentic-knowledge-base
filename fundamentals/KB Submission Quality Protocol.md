@@ -12,6 +12,8 @@ tags:
 - role/curator
 - op/protocol
 - op/quality-gate
+- source/largo
+- machine/largo
 ---
 
 # KB Submission Quality Protocol

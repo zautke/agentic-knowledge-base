@@ -1,13 +1,15 @@
 ---
 title: Index – Agent KB
 created: 2026-01-01
-modified: 2026-03-16
+modified: 2026-05-28
 type: index
 entity_type: index
 status: evergreen
 tags:
 - project/agent-kb
 - status/evergreen
+- source/largo
+- machine/largo
 permalink: agent-kb/indices/index-agent-kb
 ---
 
@@ -17,6 +19,15 @@ permalink: agent-kb/indices/index-agent-kb
 - [[Fundamental – Agent KB]]
 
 ## Core docs
+- [[Document Curation Metaprompt]] — The 8 governing principles (ACE-derived) for every living document; accumulate-never-summarize, evidence-linked entries, mandatory append-only Evolution Log, protected sections.
+- [[Curator Handover Knowledge]] — System-state handover: One-Brain monorepo strategy, tool-capability truths, Bridge Protocol, deterministic discovery, and the Curator quality-gate role.
+- [[KB Submission Quality Protocol]] — 7-gate, 100-point scoring rubric (min passing 91), rejection protocol, and submission checklist; applies to all KB additions and updates.
+- [[Curator Session Primer and Runbook]] — Canonical runbook for KB-quality sessions: required context injection, deterministic discovery sequence, structural outputs, and oversight requirements.
+- [[Schema Governance and Taxonomy Normalization Protocol]] — Note-class and taxonomy governance; schema-infer / schema-diff / schema-validate usage.
+- [[Semantic Relationship Discovery and Linking Protocol]] — The discovery protocol: lexical → hybrid → tag-neighborhood → build_context before any link or tag decision.
+- [[Basic Memory Semantic Reindex Protocol]] — Operational maintenance: stale-embedding, unresolved-link, and isolated-note remediation; reindex as routine maintenance.
+- [[Agentic Living Document Playbook]] — How to author and evolve a living document under the curation metaprompt.
+- [[PRD Document Creation Playbook]] — First production application of the curation principles to PRDs.
 
 ## Observability
 - [[Curator Submission Telemetry]] — Append-only log of every Curator scoring event (accepted + rejected); one row per submission with per-gate scores, deduction cause, and advisory; surfaces cumulative patterns and rubric-calibration drift over time
@@ -43,7 +54,7 @@ permalink: agent-kb/indices/index-agent-kb
 - [[Meta-Instruction – Build Action Taxonomy]]
 - [[SessionStart Primer – Agentic Knowledge Base]]
 
-<!-- generated_at: 2026-01-26T22:44:19Z -->
+<!-- generated_at: 2026-05-28T00:00:00Z (refreshed during index-reconciler curation run) -->
 
 ## Projects
 - [[multi-agent-platform — README]] — Discovery and planning ledger for a new production multi-agent orchestration platform with Python-first runtime, decoupled dashboard, and full A2A compliance.
@@ -53,6 +64,20 @@ permalink: agent-kb/indices/index-agent-kb
 - [[mdeditor]] — React markdown editor
 - [[graphrag – System Overview]] — Plugin-driven hybrid RAG pipeline; 19 plugin categories; 5 stages; Textual TUI; JSON-RPC transport
 - [[agent-toolkit — README]] — Production Python package: 6 research tools, HybridResearcher agent, 3 use cases; Tavily + LangChain-based
+- [[kb/projects/multi-agent-helm/project-index|multi-agent-helm — Project Index]] — Distributed A2A Helm/Kubernetes scaffold project hub (planning, tasks, session history, system-architecture diagram, inception context).
+
+## Operational & Reference Indices
+- [[Index – MCP Gateway Operations]] — Canonical hub for gateway-oriented MCP operations: protocol foundations, Supergateway/Auggie deployment, smoke-test workflows. (Supersedes the deprecated hyphen-variant duplicate.)
+- [[Index – MCP and Codex Operations]] — Hub for operational MCP/Codex/Supergateway knowledge from the Codex MCP manual and related protocol research.
+- [[Index – Codex Co-Agent Collaboration]] — Foreman/assistant coordination protocol, Blackboard, and lease/task notes.
+- [[Index – Agent Runtime and Capability Stack]] — Global stack hub: runtime/capability stack, MCP boundaries, FastMCP, LiteLLM.
+- [[Index – Reference Patterns]] — Hub for cross-cutting reference patterns (LLM fallback cascade, provider abstraction, etc.).
+
+## Research
+- [[Research Chronicle - Self-Learning and Self-Evolving AI Agents]] — Append-only research chronicle on self-learning / self-evolving agent architectures.
+
+## Migrations
+- [[Migration Plan - agent-kb to agentic-kb Consolidation]] — Active plan to consolidate `agent-kb` into the `agentic-kb` structure.
 
 ## Registries
 - [[Agentic Teams Repository]]
@@ -76,6 +101,7 @@ permalink: agent-kb/indices/index-agent-kb
 - [[Index - Ollama Local Service Operations]] — Hub for `olsvc.sh` command surface, audit findings, and compatibility/API operations
 - [[Ollama Local Service (olsvc.sh) - Operational Session 2026-02-19]] — Session record for field-test artifact ingestion and operational decisions.
 - [[Ollama Local Service (olsvc.sh) - Multi-Agent Field Test Plan]] — Reusable multi-agent validation plan with command and coverage inventory.
+- [[Free-Disk-Space Protocol on largo]] — Tiered, existence-gated cache-reclaim protocol for disk-constrained `largo` (macOS Tahoe); Tier1/1b/2/3 commands, safety rubric, df pre-flight, and seeded run evidence (~15.9G reclaimed, 2.9Gi→6.0Gi).
 ## Trigger Conditions for Update
 - New top-level operational domains are added and require direct root-index discoverability.
 - Existing infrastructure hubs split into deeper sub-indices and root links must be rebalanced.
@@ -110,3 +136,4 @@ permalink: agent-kb/indices/index-agent-kb
 | 2026-03-17 | Added `[[chatgpt-index]]` direct link to Projects section | Implementation repo now has its own KB root note; direct discoverability from root index without hub traversal | Architecture diagram and "Still Missing" gap-fill pass |
 | 2026-03-17 | Collapsed indexer project links into single `[[Index – Indexer Project]]` entry; moved all notes from `projects/assist-indexer/` and `projects/chatgpt-index/` to `indexer/`; retagged all 6 notes from `project/assist-indexer`/`project/chatgpt-index` → `project/indexer` | chatgpt-index and claude-index are entities under the umbrella `project/indexer`, not separate top-level projects | User taxonomy correction |
 | 2026-03-29 | Added `[[graphrag – System Overview]]` to Projects section | graphrag is a new active project in the KB; root-index discoverability required after 3-layer SOTA research sprint created 11 new notes in `projects/graphrag/` and `reference/rag/` | SOTA research sprint KB curation completion |
+| 2026-05-28 | Index-reconciler run: (1) populated the previously EMPTY `## Core docs` section with the 9 core governance fundamentals/instructions (Document Curation Metaprompt, Curator Handover Knowledge, KB Submission Quality Protocol, Curator Session Primer and Runbook, Schema Governance, Semantic Relationship Discovery, Basic Memory Semantic Reindex, Agentic Living Document Playbook, PRD Document Creation Playbook). (2) Refreshed the stale `generated_at` marker (was 2026-01-26). (3) Added a new `## Operational & Reference Indices` section surfacing the formerly root-orphaned hubs: `[[Index – MCP Gateway Operations]]` (canonical), `[[Index – MCP and Codex Operations]]`, `[[Index – Codex Co-Agent Collaboration]]`, `[[Index – Agent Runtime and Capability Stack]]`, `[[Index – Reference Patterns]]`. (4) Added `## Research` and `## Migrations` sections de-orphaning `[[Research Chronicle - Self-Learning and Self-Evolving AI Agents]]` and `[[Migration Plan - agent-kb to agentic-kb Consolidation]]`. (5) Added `multi-agent-helm — Project Index` to Projects (via permalink, title is the generic "project-index"). | The Core docs section was empty (governance docs unreachable from root), the generated_at was stale, and partition Scribe reports flagged several root-orphaned hubs/notes needing root-index discoverability. | Index-reconciler curation phase (runs after the 4 partition Scribes). |

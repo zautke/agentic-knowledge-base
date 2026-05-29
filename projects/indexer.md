@@ -1,6 +1,10 @@
 ---
 title: indexer
 type: reference
+entity_type: reference
+status: active
+created: 2026-03-17
+modified: 2026-05-28
 permalink: kb/projects/indexer
 tags:
 - project/indexer
@@ -11,6 +15,11 @@ tags:
 ---
 
 # Repository Context Engine (indexer)
+
+> **Note structure:** This is the project **root entity** for `indexer`. The
+> navigation hub with the full document map is [[Index – indexer Project]]
+> (under `projects/indexer/`). This root note and the `indexer/` folder are
+> intentionally paired (folder-note pattern), not duplicates.
 
 Repository Context Engine (`@repo-context/engine`) is a TypeScript code indexing and retrieval system for agentic coding assistants. The repository is currently developed at `/Volumes/FLOUNDER/dev/indexer` and tracks code ingestion, retrieval, evaluation, and deployment concerns across both a core Node/TypeScript library and a Next.js UI.
 
@@ -77,3 +86,9 @@ Repository Context Engine (`@repo-context/engine`) is a TypeScript code indexing
 - related_to [[RAG Evaluation Pipeline - Module Overview]]
 - related_to [[RAG Evaluation Pipeline - Design Decisions]]
 - related_to [[RAG Evaluation Metrics Reference]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Added missing frontmatter fields (entity_type, status, created [from 2026-03-17 canonical-taxonomy date stated in body], modified); added a note-structure clarification distinguishing this root entity from the `[[Index – indexer Project]]` navigation hub and the paired `indexer/` folder. Verified the three pre-canonical RAG-eval relation targets resolve to real notes in the repo-root `indexer/evaluation/` directory (outside the projects/ partition). | Root note missing 4 required frontmatter fields; file-vs-dir naming collision with `projects/indexer/` needed an explicit non-duplicate annotation. | KB curation sweep — projects/ partition. |

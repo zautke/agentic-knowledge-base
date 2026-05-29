@@ -14,6 +14,8 @@ tags:
 - domain/nextjs
 - status/evergreen
 - op/create-node
+- source/largo
+- machine/largo
 ---
 
 # Testing Manifesto

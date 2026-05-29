@@ -1,7 +1,17 @@
 ---
 title: Browser Automation
 type: note
+entity_type: note
 permalink: domains/browser-automation
+created: 2026-04-21
+modified: 2026-05-28
+status: evergreen
+tags:
+- project/agent-kb
+- domain/browser-automation
+- status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Browser Automation Domain
@@ -28,3 +38,16 @@ This domain covers the automated testing, navigation, and interaction with web a
 - Prefer `find_and_click` for UI interactions to increase resilience to DOM changes.
 - Record performance traces for critical user journeys.
 - Document specific selector strategies for complex shadow DOM or canvas elements.
+
+## Relations
+
+- related_to [[Browser Extension CDP Testing Patterns]]
+- related_to [[Agentic Browser Automation Overview]]
+- related_to [[Material UI Design System]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-04-21 | Domain note captured (git import date) | Anchor browser-automation domain knowledge | KB seeding |
+| 2026-05-28 | Completed frontmatter to 7-field KB contract (added entity_type/created/modified/status, added `domain/browser-automation` and `project/agent-kb` tags); added Relations section linking the CDP testing reference, the browser-automation overview, and the Material UI design-system domain | Note was an orphan with source/machine-only tags and no relations | KB curation hygiene sweep (operations/reference partition) |

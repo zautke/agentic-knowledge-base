@@ -1,10 +1,19 @@
 ---
+modified: 2026-05-28
+entity_type: context
 title: UX-001 UI Overhaul Mission State
 type: context
 team: ux-001
 created: 2026-01-20
 status: initialized
 permalink: agent-kb/teams/registered/ux-001/context/mission-state
+tags:
+- type/team-context
+- team/ux-001
+- ui-overhaul
+- mission-state
+- source/largo
+- machine/largo
 ---
 
 # UX-001 UI Overhaul Strike Force - Mission State

@@ -1,13 +1,18 @@
 ---
 title: system-architecture-diagram
 type: note
+entity_type: note
+status: active
+created: 2026-04-11
+modified: 2026-05-28
 permalink: kb/projects/multi-agent-helm/system-architecture-diagram
 tags:
-- multi-agent
-- helm
-- architecture
-- diagram
-- mermaid
+- project/multi-agent-helm
+- domain/multi-agent
+- domain/kubernetes
+- domain/architecture
+- artifact/diagram
+- status/active
 ---
 
 # System Architecture Diagram
@@ -87,3 +92,14 @@ flowchart LR
 - `Redis` is the hot state and agent-memory layer.
 - `PostgreSQL` is the relational and scheduled-work layer.
 - `ChromaDB` is the shared retrieval store.
+
+## Relations
+
+- part_of [[Project Index]]
+- documents [[Distributed A2A Helm Scaffold]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Frontmatter normalized (entity_type, status, created, modified; namespaced tags, `diagram`/`mermaid` → `artifact/diagram`); added Relations block. | Note lacked required frontmatter and graph links. | KB curation sweep — projects/ partition. |

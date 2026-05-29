@@ -12,6 +12,8 @@ tags:
 - domain/curation
 - role/curator
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Curator Handover & System State

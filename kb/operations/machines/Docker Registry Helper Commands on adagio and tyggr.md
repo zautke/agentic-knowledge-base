@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: instruction
+status: active
 title: Docker Registry Helper Commands on adagio and tyggr
 type: instruction
 permalink: kb/operations/machines/docker-registry-helper-commands-on-adagio-and-tyggr
@@ -11,6 +15,8 @@ tags:
 - machine/adagio
 - machine/tyggr
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Docker Registry Helper Commands on adagio and tyggr

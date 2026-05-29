@@ -12,6 +12,8 @@ tags:
 - domain/agent-learning
 - meta/knowledge-growth
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # t+1 Knowledge Growth — Python Expert Domain 2026-04-04

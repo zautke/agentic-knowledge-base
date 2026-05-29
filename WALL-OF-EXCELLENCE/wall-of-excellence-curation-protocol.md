@@ -13,6 +13,8 @@ tags:
 - op/create-node
 - op/update-node
 - status/active
+- source/largo
+- machine/largo
 permalink: wall-of-excellence/wall-of-excellence-curation-protocol
 ---
 

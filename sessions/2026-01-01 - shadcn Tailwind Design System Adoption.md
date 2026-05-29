@@ -1,4 +1,8 @@
 ---
+created: 2026-01-01
+modified: 2026-05-28
+entity_type: note
+status: archived
 title: shadcn-tailwind-primer
 type: note
 permalink: primers/shadcn-tailwind-primer

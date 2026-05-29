@@ -127,10 +127,11 @@ response = embed.image(
 
 - part_of [[Hybrid RAG Architecture – SOTA 2025-2026]]
 - related_to [[Codebase RAG via AST Patterns]]
-- implemented_by [[graphrag: Multimodal Plugin Patterns]]
+- implemented_by [[graphrag Multimodal Plugin Patterns]]
 
 ## Evolution Log
 
 | Date | Change | Reason | Trigger |
 |------|--------|--------|---------|
 | 2026-03-29 | Initial creation | Layer 2-B research: multimodal embedding and chunking | graphrag plugin implementation sprint |
+| 2026-05-28 | Repaired broken relation link `[[graphrag: Multimodal Plugin Patterns]]` → `[[graphrag Multimodal Plugin Patterns]]` (matched to real note title) | Colon-style link never resolved | KB curation hygiene sweep (operations/reference partition) |

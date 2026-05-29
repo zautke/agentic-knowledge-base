@@ -11,6 +11,8 @@ tags:
 - domain/browser-automation
 - pattern/testability
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Injectable Provider Tool Loop Pattern – wxt-prompt

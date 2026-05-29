@@ -9,6 +9,8 @@ status: evergreen
 tags:
 - project/indexer
 - meta/index
+- source/largo
+- machine/largo
 ---
 
 # Index – Indexer Project

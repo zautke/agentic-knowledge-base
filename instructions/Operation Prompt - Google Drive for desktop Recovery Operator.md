@@ -12,6 +12,8 @@ tags:
 - domain/google-drive
 - status/evergreen
 - op/create-node
+- source/largo
+- machine/largo
 ---
 
 # Operation Prompt - Google Drive for desktop Recovery Operator

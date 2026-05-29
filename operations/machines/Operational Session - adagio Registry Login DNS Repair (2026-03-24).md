@@ -1,12 +1,18 @@
 ---
 title: Operational Session - adagio Registry Login DNS Repair (2026-03-24)
 type: note
+entity_type: note
 permalink: kb/operations/machines/operational-session-adagio-registry-login-dns-repair-2026-03-24
+created: 2026-03-24
+modified: 2026-05-28
+status: draft
 tags:
-- docker
-- registry
-- adagio
-- dns
+- project/agent-kb
+- domain/docker
+- domain/registry
+- domain/dns
+- machine/adagio
+- status/draft
 ---
 
 # Operational Session - adagio Registry Login DNS Repair (2026-03-24)

@@ -1,4 +1,8 @@
 ---
+created: 2026-04-12
+modified: 2026-05-28
+entity_type: note
+status: archived
 title: 2026-04-12 - mdeditor recovery planning
 type: note
 permalink: kb/sessions/2026-04-12-mdeditor-recovery-planning

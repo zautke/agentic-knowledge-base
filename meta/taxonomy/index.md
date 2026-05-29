@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: index
+status: evergreen
 title: index
 type: index
 permalink: meta/taxonomy/index
@@ -6,6 +10,8 @@ tags:
 - system/core
 - meta/taxonomy
 - type/index
+- source/largo
+- machine/largo
 ---
 
 # Taxonomy Index

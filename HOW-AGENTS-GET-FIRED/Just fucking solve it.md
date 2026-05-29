@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: instruction
+status: evergreen
 title: Just fucking solve it
 type: instruction
 permalink: how-agents-get-fired/just-fucking-solve-it
@@ -7,6 +11,8 @@ tags:
 - last-inch-execution
 - user-emotion
 - accountability
+- source/largo
+- machine/largo
 ---
 
 # Just fucking solve it

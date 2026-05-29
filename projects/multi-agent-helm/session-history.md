@@ -1,11 +1,17 @@
 ---
 title: session-history
 type: note
+entity_type: note
+status: active
+created: 2026-04-11
+modified: 2026-05-28
 permalink: kb/projects/multi-agent-helm/session-history
 tags:
-- multi-agent
-- helm
-- session-history
+- project/multi-agent-helm
+- domain/multi-agent
+- domain/kubernetes
+- op/session-log
+- status/active
 ---
 
 # Session History
@@ -41,3 +47,15 @@ tags:
 - Added a dedicated Mermaid system architecture diagram note in basic memory.
 - Added `docs/SYSTEM_ARCHITECTURE.md` in the repository to keep the diagram versioned with the scaffold.
 - Prepared the repository state for the first commit and push of the `distributed/` scaffold.
+
+## Relations
+
+- part_of [[Project Index]]
+- related_to [[Initialization Protocol Execution — 2026-04-11]]
+- related_to [[Tasks]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Frontmatter normalized (entity_type, status, created, modified; namespaced tags, added `op/session-log`); added Relations block. | Note lacked required frontmatter and graph links. | KB curation sweep — projects/ partition. |

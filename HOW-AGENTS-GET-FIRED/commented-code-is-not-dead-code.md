@@ -1,10 +1,16 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: evergreen
 title: Commented Code Is Not Dead Code
 tags:
 - agent-failure
 - commented-code
 - documentation
 - intent
+- source/largo
+- machine/largo
 type: note
 permalink: agent-kb/how-agents-get-fired/commented-code-is-not-dead-code
 ---

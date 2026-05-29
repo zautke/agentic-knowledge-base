@@ -1,4 +1,8 @@
 ---
+created: 2026-04-19
+modified: 2026-05-28
+entity_type: note
+status: archived
 title: 2026-04-19 - Claude user-scope MCP install and verification
 type: note
 permalink: kb/sessions/2026-04-19-claude-user-scope-mcp-install-and-verification

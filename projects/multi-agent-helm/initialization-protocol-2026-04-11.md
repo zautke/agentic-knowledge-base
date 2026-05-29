@@ -1,12 +1,17 @@
 ---
 title: initialization-protocol-2026-04-11
 type: note
+entity_type: note
+status: active
+created: 2026-04-11
+modified: 2026-05-28
 permalink: kb/projects/multi-agent-helm/initialization-protocol-2026-04-11
 tags:
-- multi-agent
-- helm
-- initialization
-- protocol
+- project/multi-agent-helm
+- domain/multi-agent
+- domain/kubernetes
+- op/session-start
+- status/active
 ---
 
 # Initialization Protocol Execution — 2026-04-11
@@ -42,3 +47,15 @@ tags:
 - Established `project-index` as the canonical KB hub for this project.
 - Kept naming normalized under `projects/multi-agent-helm`.
 - Linked current work to the existing scaffold summary rather than duplicating implementation details.
+
+## Relations
+
+- part_of [[Project Index]]
+- related_to [[Session History]]
+- references [[Distributed A2A Helm Scaffold]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Frontmatter normalized (entity_type, status, created, modified; namespaced tags, added `op/session-start`); added Relations block. | Note lacked required frontmatter and graph links. | KB curation sweep — projects/ partition. |

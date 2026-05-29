@@ -13,6 +13,8 @@ tags:
 - domain/protocols
 - op/create-node
 - status/draft
+- source/largo
+- machine/largo
 ---
 
 # Manual MCP Client Operation for Codex

@@ -1,12 +1,18 @@
 ---
 title: A2A Healthcare Agent — Session 001 Audit Log
+created: 2026-03-29
+modified: 2026-05-28
 type: note
+entity_type: note
+status: archived
 permalink: kb/a2-a/a2-a-healthcare-agent-session-001-audit-log
 tags:
 - a2a
 - session-history
 - audit
 - '2026-03-29'
+- source/largo
+- machine/largo
 ---
 
 # Session 001 — March 2026 SOTA Audit
@@ -51,3 +57,8 @@ Fix: change to `gemini-2.5-pro-preview`.
 ## Next Steps
 
 Start with FIX-1 (gemini model ID fix), then run uv pip install upgrade pass for DEP-1 through DEP-3.
+
+## Relations
+
+- related_to [[A2A Healthcare Agent — March 2026 PLANNING]]
+- related_to [[A2A Healthcare Agent — TASKS tracker]]

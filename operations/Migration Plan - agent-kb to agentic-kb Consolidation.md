@@ -1,13 +1,17 @@
 ---
 title: Migration Plan - agent-kb to agentic-kb Consolidation
 type: note
+entity_type: note
 permalink: operations/migration-plan-agent-kb-to-agentic-kb-consolidation
+created: 2026-04-21
+modified: 2026-05-28
+status: active
 tags:
-- migration
-- operations
-- agent-kb
-- agentic-kb
-- consolidation
+- project/agent-kb
+- domain/migration
+- domain/operations
+- op/consolidation
+- status/active
 ---
 
 # Migration Plan: agent-kb → agentic-kb Consolidation
@@ -141,6 +145,19 @@ If migration fails:
 
 ## Relations
 
-- governs [[teams/Agentic Teams Repository]]
-- affects [[protocols/Team Registration Protocol]]
-- documents [[meta/agentic-kb Overview]]
+- part_of [[Index – Agent KB]]
+
+## Unresolved Relations (forward-references, annotated 2026-05-28)
+
+These targets describe the `agentic-kb` consolidation destination and do not resolve inside this `agent-kb` repo. Left as documented forward-references; resolve them after the migration lands and the destination notes exist.
+
+- governs `[[teams/Agentic Teams Repository]]` — target lives in the agentic-kb destination, not yet present here
+- affects `[[protocols/Team Registration Protocol]]` — target lives in the agentic-kb destination, not yet present here
+- documents `[[meta/agentic-kb Overview]]` — target lives in the agentic-kb destination, not yet present here
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-04-21 | Migration plan captured (git import date) | Record the agent-kb → agentic-kb consolidation plan | Project consolidation decision |
+| 2026-05-28 | Completed frontmatter to 7-field KB contract (added created/modified/status/entity_type, normalized bare tags to `domain/`/`op/` taxonomy); linked into root `[[Index – Agent KB]]`; demoted 3 forward-reference relations to a documented unresolved block | Note was an orphan with bare tags and 3 dangling forward-links to the not-yet-existing destination KB | KB curation hygiene sweep (operations/reference partition) |

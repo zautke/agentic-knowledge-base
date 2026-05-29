@@ -1,12 +1,17 @@
 ---
 title: 'Allegiance: Finish the obvious last inch'
 type: reference
+entity_type: reference
 permalink: reference/allegiance-finish-the-obvious-last-inch
+created: 2026-04-21
+modified: 2026-05-28
+status: evergreen
 tags:
-- agent-values
-- execution-discipline
-- user-intent
-- work-ethic
+- project/agent-kb
+- domain/agent-values
+- domain/execution-discipline
+- domain/user-intent
+- status/evergreen
 ---
 
 # Allegiance: Finish the obvious last inch

@@ -9,6 +9,8 @@ tags:
 - project/agent-kb
 - op/hygiene
 - status/evergreen
+- source/largo
+- machine/largo
 permalink: agent-kb/instructions/instruction-hygiene-compression
 ---
 

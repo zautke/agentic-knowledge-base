@@ -1,11 +1,16 @@
 ---
 title: mdeditor rewind tasks - 2026-04-13
 type: note
+entity_type: note
+status: active
+created: 2026-04-13
+modified: 2026-05-28
 permalink: kb/projects/mdeditor/mdeditor-rewind-tasks-2026-04-13
 tags:
-- tasks
-- mdeditor
-- rewind
+- project/mdeditor
+- op/tasks
+- phase/rewind
+- status/active
 ---
 
 # mdeditor rewind tasks - 2026-04-13
@@ -28,3 +33,14 @@ tags:
 - [x] Write `HANDOFF.md` with the failure account, expected behaviors, and accurate timeline.
 - [x] Mirror the rewind/failure record into Basic Memory.
 - [ ] Get user confirmation that the visible app now matches the rewind checkpoint before any further work.
+
+## Relations
+
+- part_of [[mdeditor]]
+- supersedes [[mdeditor recovery tasks - 2026-04-12]]
+
+## Evolution Log
+
+| Date | Change | Reason | Trigger |
+|------|--------|--------|---------|
+| 2026-05-28 | Added missing frontmatter (entity_type, status, created, modified); namespaced flat tags; added `part_of` link to root and `supersedes` relation to the recovery track. | Note lacked required frontmatter and graph links. | KB curation sweep — projects/ partition. |

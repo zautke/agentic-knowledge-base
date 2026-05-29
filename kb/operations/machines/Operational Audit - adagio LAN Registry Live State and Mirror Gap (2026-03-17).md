@@ -1,4 +1,8 @@
 ---
+created: 2026-03-17
+modified: 2026-05-28
+entity_type: note
+status: active
 title: Operational Audit - adagio LAN Registry Live State and Mirror Gap (2026-03-17)
 type: note
 permalink: kb/operations/machines/operational-audit-adagio-lan-registry-live-state-and-mirror-gap-2026-03-17
@@ -11,6 +15,8 @@ tags:
 - domain/tls
 - machine/adagio
 - status/archive
+- source/largo
+- machine/largo
 ---
 
 # Operational Audit - adagio LAN Registry Live State and Mirror Gap (2026-03-17)

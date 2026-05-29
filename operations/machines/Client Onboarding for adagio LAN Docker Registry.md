@@ -1,7 +1,11 @@
 ---
 title: Client Onboarding for adagio LAN Docker Registry
 type: instruction
+entity_type: instruction
 permalink: kb/operations/machines/client-onboarding-for-adagio-lan-docker-registry
+created: 2026-04-21
+modified: 2026-05-28
+status: evergreen
 tags:
 - project/agent-kb
 - domain/docker

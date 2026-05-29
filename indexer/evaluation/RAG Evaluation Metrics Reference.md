@@ -9,6 +9,8 @@ tags:
 - mrr
 - ndcg
 - information-retrieval
+- source/largo
+- machine/largo
 created: 2026-01-21
 module: src/evaluation/metrics.ts
 permalink: agent-kb/indexer/evaluation/rag-evaluation-metrics-reference

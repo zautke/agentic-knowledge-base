@@ -13,6 +13,8 @@ tags:
 - domain/execution-discipline
 - domain/agent-philosophy
 - status/active
+- source/largo
+- machine/largo
 ---
 
 # WALL OF EXCELLENCE

@@ -1,4 +1,8 @@
 ---
+created: 2026-03-16
+modified: 2026-05-28
+entity_type: note
+status: active
 title: Operational Session - Local Docker Registry Bootstrap and Registry Auth Repair
   on adagio and tyggr (2026-03-16)
 type: note
@@ -12,6 +16,8 @@ tags:
 - machine/adagio
 - machine/tyggr
 - status/archive
+- source/largo
+- machine/largo
 ---
 
 # Operational Session - Local Docker Registry Bootstrap and Registry Auth Repair on adagio and tyggr (2026-03-16)

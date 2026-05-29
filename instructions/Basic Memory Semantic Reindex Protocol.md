@@ -13,6 +13,8 @@ tags:
 - domain/maintenance
 - op/hygiene
 - status/evergreen
+- source/largo
+- machine/largo
 ---
 
 # Basic Memory Semantic Reindex Protocol
@@ -97,7 +99,7 @@ Reusable maintenance protocol for rebuilding Basic Memory full-text and semantic
 - [[Agentic Knowledge Base System Overview]]
 - [[Document Curation Metaprompt]]
 - [[Semantic Relationship Discovery and Linking Protocol]]
-- [[Index - MCP Gateway Operations]]
+- [[Index – MCP Gateway Operations]]
 
 ## Evidence
 - Pre-run: `basic-memory project info kb` showed semantic search enabled but `0/83` indexed and `Reindex recommended`.

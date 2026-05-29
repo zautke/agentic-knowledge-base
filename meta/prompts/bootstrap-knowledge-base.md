@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: meta_prompt
+status: evergreen
 title: bootstrap-knowledge-base
 type: meta_prompt
 permalink: meta/prompts/bootstrap-knowledge-base
@@ -6,6 +10,8 @@ tags:
 - system/meta-prompt
 - meta/bootstrap
 - type/instruction
+- source/largo
+- machine/largo
 ---
 
 # Meta-Prompt: Bootstrap Knowledge Base

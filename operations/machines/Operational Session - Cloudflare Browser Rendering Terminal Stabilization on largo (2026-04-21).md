@@ -2,7 +2,11 @@
 title: Operational Session - Cloudflare Browser Rendering Terminal Stabilization on
   largo (2026-04-21)
 type: reference
+entity_type: reference
 permalink: agent-kb/operations/machines/operational-session-cloudflare-browser-rendering-terminal-stabilization-on-largo-2026-04-21
+created: 2026-04-21
+modified: 2026-05-28
+status: draft
 tags:
 - project/agent-kb
 - domain/cloudflare

@@ -10,6 +10,8 @@ tags:
 - project/indexer
 - domain/data-pipeline
 - domain/search
+- source/largo
+- machine/largo
 ---
 
 # indexer

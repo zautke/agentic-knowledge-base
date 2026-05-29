@@ -1,7 +1,19 @@
 ---
+created: 2026-01-21
+modified: 2026-05-28
+entity_type: note
+status: archived
 title: 2026-01-21 - MUI7 Storybook Migration
 type: note
 permalink: agent-kb/sessions/2026-01-21-mui7-storybook-migration
+tags:
+- type/session
+- project/blogg
+- mui7
+- storybook
+- design-system
+- source/largo
+- machine/largo
 ---
 
 # Session: 2026-01-21 - MUI7 Storybook Migration

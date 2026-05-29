@@ -1,4 +1,8 @@
 ---
+created: 2026-04-21
+modified: 2026-05-28
+entity_type: note
+status: evergreen
 title: shadcn-tailwind-design-system-founding-document
 type: note
 permalink: meta/founding-documents/shadcn-tailwind-design-system-founding-document
@@ -10,6 +14,8 @@ tags:
 - npm
 - github-actions
 - theming
+- source/largo
+- machine/largo
 ---
 
 # Founding Document: shadcn + Tailwind CSS 4.1 Design System with npm Deployment

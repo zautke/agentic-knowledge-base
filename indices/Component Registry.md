@@ -12,6 +12,8 @@ tags:
 - domain/components
 - index/registry
 - status/draft
+- source/largo
+- machine/largo
 ---
 
 # Component Registry
